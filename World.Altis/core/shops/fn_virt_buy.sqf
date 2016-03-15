@@ -20,6 +20,8 @@ _hideout = (nearestObjects[getPosATL player,["Land_u_Barracks_V2_F","Land_i_Barr
 if((_price * _amount) > CASH && {!isNil "_hideout" && {!isNil {grpPlayer getVariable "gang_bank"}} && {(grpPlayer getVariable "gang_bank") <= _price * _amount}}) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
 if((time - life_action_delay) < 0.2) exitWith {hint localize "STR_NOTF_ActionDelay";};
 life_action_delay = time;
+if((life_nottoofast != 0) && ((time - life_nottoofast) < 2)) exitWith {hint "Não tão rápido!";};
+life_nottoofast = time;
 
 _name = M_CONFIG(getText,"VirtualItems",_type,"displayName");
 
