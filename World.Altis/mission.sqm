@@ -172,8 +172,8 @@ class Mission
 	randomSeed=2004553;
 	class Intel
 	{
-		briefingName="Altis Life RPG v4.4r1";
-		overviewText="An RPG game mode developed by Tonic";
+		briefingName="Raio";
+		overviewText="Raio";
 		startWeather=0.099999994;
 		startWind=0.29999998;
 		startWindDir=20;
@@ -52989,28 +52989,28 @@ class Mission
 		{
 			position[]={517.95477,0.051872339,7721.2021};
 			name="Welcome";
-			text="Welcome To Altis Impulse";
+			text="Welcome To Altis Raio";
 			type="flag_UK";
 		};
 		class Item261
 		{
 			position[]={484.50995,0.063841313,6985.958};
 			name="Ts";
-			text="Come Join Our Teamspeak: ts.altisimpulse.co.uk:9166";
+			text="Venha para nosso Teamspeak: RaioWorld";
 			type="flag_UK";
 		};
 		class Item262
 		{
 			position[]={449.54816,0.0003808029,6348.1338};
 			name="Join Our Website";
-			text="Join Our Website: www.altisimpulse.co.uk";
+			text="Join Our Website: www.RaioWorld";
 			type="flag_UK";
 		};
 		class Item263
 		{
 			position[]={541.23712,-0.020987965,8564.6465};
 			name="Map";
-			text="Map Edited By Cam";
+			text="Map Edited By Raio";
 			type="flag_UK";
 		};
 		class Item264
