@@ -27,6 +27,7 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
+life_nottoofast = time;
 life_respawn_timer = 0.75; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
