@@ -11,6 +11,9 @@
 private["_ctrl","_num","_totalWeight","_itemWeight","_veh_data","_inv","_index","_val"];
 disableSerialization;
 
+if((life_nottoofast != 0) && ((time - life_nottoofast) < 2)) exitWith {hint "Não tão rápido!";};
+life_nottoofast = time;
+
 _ctrl = ctrlSelData(3503);
 _num = ctrlText 3506;
 if(!([_num] call TON_fnc_isnumber)) exitWith {hint "Invalid Number format";};
