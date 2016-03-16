@@ -209,6 +209,7 @@ class Life_Client_Core
 		class nearestObjects {};
 		class teleport {};
 		class searchPosEmpty {};
+		class fadeSound {};
 	};
 
 	class Travis_Phone
