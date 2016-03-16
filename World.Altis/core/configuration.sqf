@@ -53,6 +53,7 @@ life_pos_exist = false;
 life_pos_attach = [];
 life_civ_position = [];
 Life_request_timer = false;
+life_fadeSound = false;
 
 //Settings
 life_settings_enableSidechannel = GVAR_PNAS["life_enableSidechannel",true];
