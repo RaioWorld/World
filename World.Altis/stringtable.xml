@@ -6762,5 +6762,29 @@
       <Original>Your share is $%1</Original>
       <German>Dein Anteil beträgt $%1</German>
     </Key>
+    <Key ID="STR_pAct_DriverSeat">
+      <Original>assento de motorista</Original>
+      <English>driver's seat</English>
+      <German>Auf den Fahrersitz</German>
+      <French>Place conducteur</French>
+    </Key>
+    <Key ID="STR_pAct_PassengerSeat">
+      <Original>assento do passageiro</Original>
+      <English>passenger seat</English>
+      <German>Auf den Passagiersitz</German>
+      <French>Place passager</French>
+    </Key>
+    <Key ID="STR_pAct_GunnerSeat">
+      <Original>assento de atirador</Original>	
+      <English>gunner seat</English>	
+      <German>gunner seat</German>
+      <French>Place tireur</French>
+    </Key>
+    <Key ID="STR_pAct_GoOut">
+      <Original>Vá para fora do veículo</Original>
+      <English>Go out of vehicle</English>
+      <German>Aus dem Fahrzeug austeigen</German>
+      <French>Sortir du véhicule</French>
+    </Key>
   </Package>
 </Project>
