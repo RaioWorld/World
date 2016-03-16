@@ -26,4 +26,5 @@ if(_medicsOnline) then {
 };
 
 Life_request_timer = true;
-[] spawn {((findDisplay 7300) displayCtrl 7303) ctrlEnable false;
+[] spawn {
+	((findDisplay 7300) displayCtrl 7303) ctrlEnable false;
