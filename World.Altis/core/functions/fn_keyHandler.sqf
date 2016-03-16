@@ -187,6 +187,14 @@ switch (_code) do {
 		};
 	};
 
+	//Shift+P = Faded Sound
+	case 25: {    
+			if(_shift) then {
+				[] call life_fnc_fadeSound;       
+			_handled = true;
+			};
+		};
+	
 	//F Key
 	case 33: {
 		if(playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
