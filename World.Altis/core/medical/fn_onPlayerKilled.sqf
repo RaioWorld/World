@@ -65,6 +65,16 @@ _unit spawn {
 	waitUntil {if(speed _unit == 0) exitWith {true}; life_deathCamera camSetTarget _unit; life_deathCamera camSetRelPos [0,3.5,4.5]; life_deathCamera camCommit 0;};
 };
 
+[] spawn life_fnc_deathScreen;
+
+if(life_nlrtimer_running) then
+{
+life_nlrtimer_stop = true;
+waitUntil {!life_nlrtimer_running};
+};
+
+[] spawn life_fnc_newLifeRule;
+
 //Make the killer wanted
 if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _killer}) then {
 	if(vehicle _killer isKindOf "LandVehicle") then {
