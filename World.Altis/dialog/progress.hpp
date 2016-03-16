@@ -76,7 +76,6 @@ class life_timer
 
 	class life_nlrtimer
 	{
-
     	name = "life_nlrtimer";
 	idd = 38300;
 	fadeIn = 1;
