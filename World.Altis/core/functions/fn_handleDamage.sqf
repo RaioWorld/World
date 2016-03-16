@@ -36,6 +36,13 @@ if(!isNull _source) then {
 				};
 			};
 
+			//Anti-VDM Script
+if(vehicle _source isKindOf "LandVehicle") then {
+	if(_source != _unit AND {alive _unit} AND {isPlayer _source}) then {
+		_damage = 0.001;
+	};
+};
+
 			//Temp fix for super tasers on cops.
 			if(side _source == west && (playerSide == west OR playerSide == independent)) then {
 				_damage = false;
