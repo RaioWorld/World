@@ -36,13 +36,6 @@ if(!isNull _source) then {
 				};
 			};
 
-			//Anti-VDM Script
-if(vehicle _source isKindOf "LandVehicle") then {
-	if(_source != _unit AND {alive _unit} AND {isPlayer _source}) then {
-		_damage = 0.001;
-	};
-};
-
 			//Temp fix for super tasers on cops.
 			if(side _source == west && (playerSide == west OR playerSide == independent)) then {
 				_damage = false;
@@ -51,5 +44,30 @@ if(vehicle _source isKindOf "LandVehicle") then {
 	};
 };
 
-[] call life_fnc_hudUpdate;
-_damage;
+	//THIS IS WHERE THE NEW VDM STOPPER IS ADDED - REMOVE IF BUGGED
+	if (vehicle _unit == _unit) then
+	{
+	if ( _source isKindOf "Air" OR _source isKindOf "Car" OR _source isKindOf "Boat" ) then
+	{
+	diag_log "_Source is Vehicle, Not a player driving a vehicle"
+	}
+	else
+	{
+	
+
+	_isVehicle = vehicle _source;
+	if (_isVehicle isKindOf "Air" OR _isVehicle isKindOf "Car" OR _isVehicle isKindOf "Boat") then
+	{
+	_damage = 0.001;
+	[[player,"amovppnemstpsraswrfldnon"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+	};
+	};
+	};
+	
+
+	
+
+	
+
+	[] call life_fnc_hudUpdate;
+	_damage;
