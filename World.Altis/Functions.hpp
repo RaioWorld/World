@@ -96,6 +96,7 @@ class Life_Client_Core
 		class ticketAction {};
 		class packupSpikes {};
 		class storeVehicle {};
+		class robShops {}; //Rob Gas Station & Shops Script
 		class robAction {};
 		class captureHideout {};
 		class gather {};
