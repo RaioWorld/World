@@ -64,6 +64,7 @@ class Life_Client_Core
 		class medicLights {};
 		class medicSiren {};
 		class medEnter {};
+		class newLifeRule {};
 	};
 
 	class Actions
