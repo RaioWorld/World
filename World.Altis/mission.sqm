@@ -3545,7 +3545,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_3";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];this setVariable[""realname"", ""Car Shop""];";
 				};
 				class Item102
 				{
@@ -4579,7 +4579,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_1_2";
-					init="removeallWeapons this; this enableSimulation false;this allowDamage false; this addAction[""Loja de veiculos"",life_fnc_vehicleShopMenu,[""reb_car1"",civilian,[""vip_v_2""],""civ"",""Loja de veiculos Vip""],0,false,false,"""",'license_civ_donator']; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""Mercado Vip""];; this addAction[""Loja de Roupas Vip"",life_fnc_clothingMenu,""reb1"",0,false,false,"""",' license_civ_donator && playerSide == civilian'];this addAction[""Loja de Armas"",life_fnc_weaponShopMenu,""doador"",0,false,false,"""",'license_civ_donator && playerSide == civilian']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""donator"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""donator"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""donator"",0,false,false,"""",' !license_civ_donator && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this setVariable[""realname"", ""Loja Vip""]; ";
+					init="removeallWeapons this; this enableSimulation false;this allowDamage false; this addAction[""Loja de veiculos"",life_fnc_vehicleShopMenu,[""reb_car1"",civilian,[""vip_v_2""],""civ"",""Loja de veiculos Vip""],0,false,false,"""",'license_civ_donator']; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""Mercado Vip""]; this addAction[""Loja de Roupas Vip"",life_fnc_clothingMenu,""reb1"",0,false,false,"""",' license_civ_donator && playerSide == civilian'];this addAction[""Loja de Armas"",life_fnc_weaponShopMenu,""doador"",0,false,false,"""",'license_civ_donator && playerSide == civilian']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""donator"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""donator"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""donator"",0,false,false,"""",' !license_civ_donator && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this setVariable[""realname"", ""Loja Vip""]; ";
 				};
 			};
 		};
@@ -4591,8 +4591,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14760.646,4.8817592,10761.933};
-					azimut=1149.0889;
+					position[]={14758.014,4.7378235,10761.308};
+					azimut=1149.09;
 					special="NONE";
 					id=267;
 					side="EAST";
@@ -4600,7 +4600,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_3_1_1_1_2";
-					init="removeallWeapons this;this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_2_1_1_1"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2];   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_2_1_1_1"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2];   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -4613,7 +4613,7 @@ class Mission
 				class Item0
 				{
 					position[]={14756.721,4.6462698,10766.929};
-					azimut=436.9678;
+					azimut=436.96799;
 					special="NONE";
 					id=268;
 					side="EAST";
@@ -4621,7 +4621,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_3_1_1_1_1_1";
-					init="removeallWeapons this;this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2]; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_3_3"";  }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2]; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_3_3"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -4713,7 +4713,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_3_1_1_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2]; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_3_2_1"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2]; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_3_2_1"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -4734,7 +4734,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_3_1_1_1_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_2_1"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2];   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_2_1"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2];   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -4755,7 +4755,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_3_1_1_1_2_2";
-					init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_2_1_1"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2];   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_2_1_1"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2];   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -4776,7 +4776,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_3_1_1_1_1_1_2";
-					init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2]; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_3_4"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2]; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_3_4"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -4797,7 +4797,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_3_1_1_1_2_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_2"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2];   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_2"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2];   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -4818,7 +4818,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_3_1_1_1_1_1_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2]; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_3_2_1_1"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2]; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_3_2_1_1"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -4879,7 +4879,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_3_1_1_1_2_2_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_2_1"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2];   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_2_1"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [_nearVehicle,false,(_this select 1)] remoteExecCall [""TON_fnc_vehicleStore"",2];   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -4900,7 +4900,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_3_1_1_1_1_1_2_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2]; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_3_4"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2]; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_3_4"";  }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -91233,14 +91233,14 @@ class Mission
 			position[]={14765.146,4.561903,10774.656};
 			name="car_g_3_3";
 			type="Empty";
-			angle=1074.3181;
+			angle=1074.3199;
 		};
 		class Item316
 		{
 			position[]={14747,5.4373975,10733.095};
 			name="air_g_2_1_1_1";
 			type="Empty";
-			angle=1803.9362;
+			angle=1803.9399;
 		};
 		class Item317
 		{
