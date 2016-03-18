@@ -191,7 +191,13 @@ class LifeCfgVehicles {
         chopShop = 5000;
         textures[] = { };
     };
-
+    
+	 class I_Heli_light_03_unarmed_F {
+        vItemSpace = 350;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        rentalprice[] = { 150000, -1, -1, -1 };
+        textures[] = { };
+    };
     
     class I_Truck_02_medical_F {
         vItemSpace = 150;
