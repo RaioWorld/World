@@ -183,6 +183,16 @@ class LifeCfgVehicles {
         textures[] = {};
     };
 
+	 class I_MRAP_03_F {
+        vItemSpace = 58;
+        storageFee[] = { 1000, 0, 0, 0 };
+        garageSell[] = { 3500, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+
+    
     class I_Truck_02_medical_F {
         vItemSpace = 150;
         licenses[] = { {""}, {""}, {""}, {""} };
@@ -711,3 +721,4 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {};
     };
 };
+
