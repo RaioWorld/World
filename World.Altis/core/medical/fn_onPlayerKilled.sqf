@@ -52,7 +52,8 @@ _unit spawn {
 	_RespawnBtn ctrlEnable false;
 	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
 	round(_maxTime - time) <= 0 || isNull _this || Life_request_timer};
-	if (Life_request_timer) then {_maxTime = time + (life_respawn_timer * 150);waitUntil {_Timer ctrlSetText format["STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
+	if (Life_request_timer) then {_maxTime = time + (life_respawn_timer * 150);
+	waitUntil {_Timer ctrlSetText format["STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
 	round(_maxTime - time) <= 0 || isNull _this};
 	};
 	Life_request_timer = false; //resets increased respawn timer
