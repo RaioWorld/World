@@ -22,6 +22,7 @@ switch (_side) do
 			["cop_spawn_3","Athira HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
 			["cop_spawn_4","Air HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
 			["cop_spawn_5","HW Patrol","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+			
 		];
 	};
 	
@@ -33,7 +34,22 @@ switch (_side) do
 			["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["civ_spawn_4","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
-		
+
+		if(license_civ_rebel && playerSide == civilian) then {
+			_return = [
+				["reb_spawn_1","Rebelde 1","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["reb_spawn_2","Rebelde 2","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["reb_spawn_3","Rebelde 3","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["reb_spawn_4","Fronteira Rebelde","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				];
+			};
+			
+		if(license_civ_donator && playerSide == civilian) then {
+			_return = _return + [		
+				["spawn_donator","Area VIP","\a3\ui_f\data\map\MapControl\badge_rotate_0_gs.paa"]		
+				];
+			};	
+
 		if(count life_houses > 0) then {
 			{
 				_pos = call compile format["%1",_x select 0];
@@ -42,7 +58,7 @@ switch (_side) do
 				
 				_return pushBack [format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"];
 			} foreach life_houses;
-		};	
+		};
 	};
 	
 	case independent: {
