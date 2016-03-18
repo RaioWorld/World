@@ -18,6 +18,11 @@ if(_medicsOnline) then {
 	[life_corpse,profileName] remoteExecCall ["life_fnc_copMedicRequest",west];
 };
 
+Life_request_timer = true;
+[] spawn  {
+	((findDisplay 7300) displayCtrl 7303) ctrlEnable false;
+};
+
 //Create a thread to monitor duration since last request (prevent spammage).
 [] spawn  {
 	((findDisplay 7300) displayCtrl 7303) ctrlEnable false;
