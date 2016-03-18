@@ -3545,7 +3545,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_3";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize ""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""civ"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
 				};
 				class Item102
 				{
@@ -3557,7 +3557,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_3_1";
-					init=" this enableSimulation false; removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_2""],""civ"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel']; this setVariable[""realname"", ""Car Shop""];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_2""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
 				};
 				class Item103
 				{
@@ -4236,7 +4236,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_3_2";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize ""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1_2"",""reb_v_1_1_1""],""civ"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1_2"",""reb_v_1_1_1""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
 					syncId=1;
 					synchronizations[]={0};
 				};
@@ -4331,7 +4331,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_3_3";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize ""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1_1_2"",""reb_v_1_3""],""civ"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1_3"",""reb_v_1_1_2""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
 					syncId=6;
 					synchronizations[]={0};
 				};
@@ -4921,7 +4921,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_3_1_1";
-					init=" this enableSimulation false; removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_2_1""],""civ"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel']; this setVariable[""realname"", ""Car Shop""];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_2_1""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
 				};
 			};
 		};
@@ -89811,7 +89811,7 @@ class Mission
 			position[]={12288.481,123.74883,8919.6299};
 			name="reb_v_2";
 			type="Empty";
-			angle=-131.69177;
+			angle=-131.692;
 		};
 		class Item157
 		{
@@ -90578,7 +90578,7 @@ class Mission
 			position[]={23855.164,5.23,16245.581};
 			name="reb_v_1_1_2";
 			type="Empty";
-			angle=142.37651;
+			angle=142.377;
 		};
 		class Item247
 		{
