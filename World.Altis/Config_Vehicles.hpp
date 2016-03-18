@@ -72,7 +72,7 @@ class CarShops {
         side = "civ";
         vehicles[] = {
             { "B_Quadbike_01_F", { "", "", -1 } },
-            { "B_G_Offroad_01_F", { "", "", -1 } }
+            { "B_G_Offroad_01_F", { "", "", -1 } },
 	    { "B_G_Offroad_01_armed_F", { "", "", -1 } },
 	    { "O_MRAP_02_F", 3750000, { "", "", -1 } },
 	    { "I_MRAP_03_F", 3750000, { "", "", -1 } },
