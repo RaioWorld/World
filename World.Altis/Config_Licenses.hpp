@@ -187,4 +187,12 @@ class Licenses {
         illegal = false;
         side = "med";
     };
+    
+    class Donator {
+        variable = "donator";
+        displayName = "Vip";
+        price = 999999999;
+        illegal = false;
+        side = "civ";
+    };
 };
