@@ -2,8 +2,10 @@
 
 life_fadeSound = !life_fadeSound;
 if (life_fadeSound) then {	1 fadeSound 0.1; // Faded to 10%	titleText 
-["Você inseriu o tampão de ouvido.", "PLAIN"];
+[
+"Você inseriu o tampão de ouvido.", "PLAIN"];
 }
 else{	1 fadeSound 1; // Returned to 100%	titleText 
-["Você removeu o tampão de ouvido.", "PLAIN"];
+[
+"Você removeu o tampão de ouvido.", "PLAIN"];
 };
