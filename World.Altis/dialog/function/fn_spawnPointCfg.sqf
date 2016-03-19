@@ -21,7 +21,9 @@ switch (_side) do
 			["cop_spawn_2","Pyrgos HQ","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
 			["cop_spawn_3","Athira HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
 			["cop_spawn_4","Air HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_5","HW Patrol","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+			["cop_spawn_5","HW Patrol","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
+			["cop_spawn_6","Militar","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
+			["cop_spawn_7","Sniper","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 			
 		];
 	};
@@ -41,8 +43,7 @@ switch (_side) do
 				["reb_spawn_2","Rebelde 2","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["reb_spawn_3","Rebelde 3","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["reb_spawn_4","Fronteira Rebelde","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["reb_spawn_3_1","Forcas Armadas","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["reb_spawn_3_2","Ochrolimni","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["reb_spawn_3_1","Forcas Armadas","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 				];
 			};
 			
