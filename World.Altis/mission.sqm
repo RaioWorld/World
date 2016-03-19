@@ -3545,7 +3545,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_3";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];this setVariable[""realname"", ""Car Shop""];";
+					init=" removeallWeapons this;this enableSimulation false;this allowDamage false;this addAction[""Loja de veiculos"",life_fnc_vehicleShopMenu,[""reb_car1"",civilian,[""reb_v_1"",""reb_v_1_1""],""civ"",""Loja de veiculos""],0,false,false,"""",'license_civ_rebel'];this setVariable[""realname"", ""Loja Rebelde""];this addAction[localize""STR_MAR_Rebel_Market"",life_fnc_virt_menu,""rebel""];this addAction[localize ""STR_MAR_Rebel_Clothing_Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[localize ""STR_MAR_Rebel_Weapon_Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian '];this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];  ";
 				};
 				class Item102
 				{
@@ -4579,7 +4579,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_1_2";
-					init="removeallWeapons this; this enableSimulation false;this allowDamage false; this addAction[""Loja de veiculos"",life_fnc_vehicleShopMenu,[""reb_car1"",civilian,[""vip_v_2""],""civ"",""Loja de veiculos Vip""],0,false,false,"""",'license_civ_donator']; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""Mercado Vip""]; this addAction[""Loja de Roupas Vip"",life_fnc_clothingMenu,""reb1"",0,false,false,"""",' license_civ_donator && playerSide == civilian'];this addAction[""Loja de Armas"",life_fnc_weaponShopMenu,""doador"",0,false,false,"""",'license_civ_donator && playerSide == civilian']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""donator"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""donator"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""donator"",0,false,false,"""",' !license_civ_donator && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this setVariable[""realname"", ""Loja Vip""]; ";
+					init="removeallWeapons this; this enableSimulation false;this allowDamage false; this addAction[""Loja de veiculos"",life_fnc_vehicleShopMenu,[""reb_car1"",civilian,[""vip_v_2"",""vip_v_2_1""],""civ"",""Loja de veiculos Vip""],0,false,false,"""",'license_civ_donator']; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""Mercado Vip""]; this addAction[""Loja de Roupas Vip"",life_fnc_clothingMenu,""reb1"",0,false,false,"""",' license_civ_donator && playerSide == civilian'];this addAction[""Loja de Armas"",life_fnc_weaponShopMenu,""doador"",0,false,false,"""",'license_civ_donator && playerSide == civilian']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""donator"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""donator"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""donator"",0,false,false,"""",' !license_civ_donator && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this setVariable[""realname"", ""Loja Vip""]; ";
 				};
 			};
 		};
@@ -88573,7 +88573,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=356;
+		items=357;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -89957,7 +89957,7 @@ class Mission
 			position[]={8866.3232,78.560028,23439.301};
 			name="reb_v_1";
 			type="Empty";
-			angle=99.304924;
+			angle=99.304901;
 		};
 		class Item175
 		{
@@ -90110,7 +90110,7 @@ class Mission
 			position[]={8886.6475,77.552673,23436.803};
 			name="reb_v_1_1";
 			type="Empty";
-			angle=107.75784;
+			angle=107.758;
 		};
 		class Item195
 		{
@@ -91247,7 +91247,7 @@ class Mission
 			position[]={14764.852,3.6712646,10791.252};
 			name="vip_v_2";
 			type="Empty";
-			angle=1092.6539;
+			angle=1092.65;
 		};
 		class Item318
 		{
@@ -91576,6 +91576,13 @@ class Mission
 			a=160;
 			b=45;
 			angle=-33.5019;
+		};
+		class Item356
+		{
+			position[]={14764.575,4.2052073,10781.91};
+			name="vip_v_2_1";
+			type="Empty";
+			angle=1083.87;
 		};
 	};
 	class Sensors
