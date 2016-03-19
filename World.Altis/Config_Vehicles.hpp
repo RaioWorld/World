@@ -74,12 +74,12 @@ class CarShops {
             { "B_Quadbike_01_F", { "", "", -1 } },
             { "B_G_Offroad_01_F", { "", "", -1 } },
 	    { "B_G_Offroad_01_armed_F", { "", "", -1 } },
-	    { "O_MRAP_02_F", 3750000, { "", "", -1 } },
-	    { "I_MRAP_03_F", 3750000, { "", "", -1 } },
+	    { "O_MRAP_02_F", { "", "", -1 } },
+	    { "I_MRAP_03_F",{ "", "", -1 } },
 	    
 	    //Helis
 	    
-	    { "B_Heli_Light_01_F", 1000000, { "", "", -1 } },
+	    { "B_Heli_Light_01_F", { "", "", -1 } },
             { "O_Heli_Light_02_unarmed_F", { "", "", -1 } },
             { "I_Heli_light_03_unarmed_F", { "", "", -1 } }
         };
@@ -114,10 +114,8 @@ class reb_car1 {
     class med_shop {
         side = "med";
         vehicles[] = {
-            { "C_Offroad_01_F", { "", "", -1 } },
-            { "I_Truck_02_medical_F", { "", "", -1 } },
-            { "O_Truck_03_medical_F", { "", "", -1 } },
-            { "B_Truck_01_medical_F", { "", "", -1 } }
+            { "C_Hatchback_01_sport_F", { "", "SportSAMU", -1 } },
+            { "C_SUV_01_F", { "", "SUVSAMU", -1 } }
         };
     };
 
@@ -132,11 +130,11 @@ class reb_car1 {
     class cop_car {
         side = "cop";
         vehicles[] = {
-            { "C_Offroad_01_F", { "", "", -1 } },
+            { "C_Offroad_01_F", { "", "OffroadPM", -1 } },
             { "C_SUV_01_F", { "", "", -1 } },
-            { "C_Hatchback_01_sport_F", { "life_coplevel", "SCALAR", 1 } },
-            { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 2 } },
-            { "B_MRAP_01_hmg_F", { "life_coplevel", "SCALAR", 3 } }
+            { "C_Hatchback_01_sport_F", { "life_coplevel", "HatchPM", 1 } },
+            { "B_MRAP_01_F", { "life_coplevel", "HunterBackPM","HunterFrontPM", 2 } },
+            { "B_G_Offroad_01_armed_F", { "life_coplevel", "", 3 } }
         };
     };
 
@@ -144,7 +142,8 @@ class reb_car1 {
         side = "cop";
         vehicles[] = {
             { "B_Heli_Light_01_F", { "", "", -1 } },
-            { "B_Heli_Transport_01_F", { "life_coplevel", "SCALAR", 3 } }
+            { "O_Heli_Light_02_unarmed_F",{ "", "", 2 } },
+            { "I_Heli_light_03_unarmed_F",{ "", "", 3 } }
         };
     };
 
@@ -196,7 +195,11 @@ class LifeCfgVehicles {
         vItemSpace = 350;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
         rentalprice[] = { 150000, -1, -1, -1 };
-        textures[] = { };
+        textures[] = {
+        	{ "Policia", "cop", {
+                "textures\Cop\hellcat_cop.paa"
+            } }
+        };
     };
     
     class I_Truck_02_medical_F {
@@ -377,8 +380,8 @@ class LifeCfgVehicles {
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+            { "Policia", "cop", {
+                "textures\Cop\OffroadPM.paa"
             } }
         };
     };
@@ -425,8 +428,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+            { "Monster", "civ", {
+                "textures\Civ\Civ_monster.paa"
+            } },
+            { "Policia", "cop", {
+                "textures\Cop\HatchPM.paa"
+            } },
+            { "Medico", "med", {
+                "textures\medic\SportSAMU.paa"
             } }
         };
     };
@@ -549,9 +558,12 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             } },
-            { "Police", "cop", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
+            { "Policia", "cop", {
+                "textures\Cop\SuvPM.paa"
             } },
+             { "Medico", "med", {
+                "textures\medic\SUVSAMU.paa"
+            } }
         };
     };
 
@@ -588,9 +600,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {""}, {""}, {""}, {""} };
         rentalprice[] = { -1, 30000, -1, -1 };
         textures[] = {
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            { "Caveirao", "cop", {
+                "textures\Cop\HunterBackPM.paa",
+                "textures\Cop\HunterFrontPM.paa"
             } }
         };
     };
@@ -612,7 +624,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
         rentalprice[] = { 275000, 75000, 50000, -1 };
         textures[] = {
             { "Police", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
+                "textures\Cop\police_heli.paa"
+            } },
+            { "Monster", "civ", {
+                "textures\Civ\Civ_hummingbird_monster.paa"
             } },
             { "Sheriff", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
@@ -653,8 +668,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             } },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+            { "Medico", "med", {
+                "textures\medic\EMS_LTB.paa"
             } }
         };
     };
@@ -676,8 +691,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Desert Digi", "reb", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             } },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+            { "Medico", "med", {
+                "textures\medic\orca_med.paa"
             } }
         };
     };
