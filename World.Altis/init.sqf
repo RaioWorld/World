@@ -12,6 +12,5 @@ StartProgress = false;
 [] execVM "scripts\fn_statusBar.sqf";
 [] execVM "scripts\safezone.sqf";
 [] execVM "scripts\time.sqf";
-[] execVM "core\welcome.sqf";
 
 StartProgress = true;
