@@ -34,7 +34,7 @@ class Life_Settings {
     revive_fee = 20000; //Revive fee that players have to pay and medics / EMS are rewarded
 
     /* House related settings */
-    house_limit = 5; //Maximum amount of houses a player can own.
+    house_limit = 2; //Maximum amount of houses a player can own.
 
     /* Gang related settings */
     gang_price = 520000; //Price for creating a gang, remember they are persistent so keep it reasonable to avoid millions of gangs.
@@ -76,7 +76,7 @@ class Life_Settings {
     service_chopper = 1000; //Cost to service chopper at chopper service station.
 
     /* Skins settings */
-    civ_skins = false; //Enable or disable civilian skins. Before enabling, you must add all the SEVEN files to textures folder. (It must be named as: civilian_uniform_1.jpg, civilian_uniform_2.jpg...civilian_uniform_6.jpg, civilian_uniform_7.jpg)
+    civ_skins = true; //Enable or disable civilian skins. Before enabling, you must add all the SEVEN files to textures folder. (It must be named as: civilian_uniform_1.jpg, civilian_uniform_2.jpg...civilian_uniform_6.jpg, civilian_uniform_7.jpg)
 
     /* Vehicle Settings */
     vehicleShop_rentalOnly[] = { "B_MRAP_01_hmg_F", "B_G_Offroad_01_armed_F", "B_Boat_Armed_01_minigun_F" };
