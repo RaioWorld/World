@@ -27,7 +27,7 @@ _text2 = _display displayCtrl 1102;
 _message = "";
 _message = _message + "<t align='center' size='8' shadow='0'><img image='textures\placas\welcome.jpg' /></t><br /><br />";
 _message = _message + "Links uteis (Clique no link para abrir o site)<br /><br />";
-_message = _message + " <a href='http://hostgamesmafia.forumeiros.com/forum' color='#56BDD6'>Clique Aqui</a> -- Se tiverem alguma duvida entre em nosso Forum .<br /><br />";
+_message = _message + " <a href='http://hostgamesmafia.forumeiros.com/forum' color='#56BDD6'>Clique Aqui</a> para acessar o nosso Forum .<br /><br />";
 _message = _message + "Teamspeak 3: mafiaaltisbrasil.meuts3.com.br   <br /><br />";
 
 
