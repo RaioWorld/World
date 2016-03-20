@@ -67,7 +67,7 @@ switch (_code) do {
 	};
 
 	//Surrender (Shift + B)
-	case 48: {
+	case 15: {
 		if(_shift) then {
 			if(player GVAR ["playerSurrender",false]) then {
 				player SVAR ["playerSurrender",false,true];
