@@ -141,7 +141,7 @@ class reb_car1 {
     class cop_air {
         side = "cop";
         vehicles[] = {
-            { "B_Heli_Light_01_F", { "", "", -1 } },
+            { "B_Heli_Light_01_F", { "", "LittleBirdPM", -1 } },
             { "O_Heli_Light_02_unarmed_F",{ "", "", -1 } },
             { "I_Heli_light_03_unarmed_F",{ "", "hellcat_cop", -1 } }
         };
@@ -621,8 +621,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {"pilot"}, {"cAir"}, {"mAir"}, {""} };
         rentalprice[] = { 1200000, 75000, 50000, -1 };
         textures[] = {
-            { "Police", "cop", {
-                "textures\Cop\police_heli.paa"
+            { "Policia", "cop", {
+                "textures\Cop\LittleBirdPM.paa"
             } },
             { "Monster", "civ", {
                 "textures\Civ\Civ_hummingbird_monster.paa"
