@@ -299,6 +299,9 @@ class Life_Client_Core
 		class containerInvSearch {};
 		class wantedGrab {};
 		class copEnter {};
+		class copSearchPlayer {};
+		class sequestra {};
+		class sequestroCheck {};
 	};
 
 	class Gangs
