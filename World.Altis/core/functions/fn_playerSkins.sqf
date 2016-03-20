@@ -34,7 +34,7 @@ switch(playerSide) do {
 	};
 	case west: {
 		if(uniform player == "U_Rangemaster") then {
-			player setObjectTextureGlobal [0, "textures\elite.paa"];
+			player setObjectTextureGlobal [0, "textures\cop\policia_roupaPM.paa"];
 		};
 	};
 	case independent: {
