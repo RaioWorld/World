@@ -139,4 +139,5 @@ _Btn4 ctrlSetText localize "STR_vInAct_PullOut";
 
     _Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
 
-    if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
+    if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;
+    };
