@@ -194,14 +194,14 @@ class Mission
 	randomSeed=2004553;
 	class Intel
 	{
-		briefingName="Raio";
-		overviewText="Raio";
-		startWeather=0.1;
+		briefingName="Mafia Altis Life | TS: mafiaaltisbrasil.meuts3.com.br ";
+		overviewText="Mafia Altis Life | TS: mafiaaltisbrasil.meuts3.com.br ";
+		startWeather=0.099999994;
 		startWind=0.29999998;
 		startWindDir=20;
 		startWaves=0.12;
 		startGust=0.099999994;
-		forecastWeather=0.1;
+		forecastWeather=0.099999994;
 		forecastWind=0.29999998;
 		forecastWaves=0.12;
 		forecastGust=0.099999994;
@@ -4959,7 +4959,7 @@ class Mission
 					vehicle="B_officer_F";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_ChopShop_Title"",life_fnc_chopShopMenu,""chop_shop_2"",""cop"",0,false,false,"""",'playerSide == west'];this setObjectTextureGlobal [0,""textures\cop_uniform.paa""];";
+					init="removeBackpack this;removeAllWeapons this;this enableSimulation false;this allowDamage false;this addAction[localize""STR_ChopShop_Title"",life_fnc_chopShopMenu,"""",0,false,false,"""",'playerSide == west'];this setObjectTextureGlobal [0,""textures\cop_uniform.paa""];";
 				};
 			};
 		};
@@ -4972,14 +4972,14 @@ class Mission
 				class Item0
 				{
 					position[]={13765.292,20.348663,18944.754};
-					azimut=-595.12079;
+					azimut=-595.12097;
 					special="NONE";
 					id=284;
 					side="WEST";
 					vehicle="B_officer_F";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_ChopShop_Title"",life_fnc_chopShopMenu,""chop_shop_2"",""cop"",0,false,false,"""",'playerSide == west'];this setObjectTextureGlobal [0,""textures\cop_uniform.paa""];";
+					init="removeBackpack this;removeAllWeapons this;this enableSimulation false;this allowDamage false;this addAction[localize""STR_ChopShop_Title"",life_fnc_chopShopMenu,"""",0,false,false,"""",'playerSide == west'];this setObjectTextureGlobal [0,""textures\cop_uniform.paa""];";
 				};
 			};
 		};
@@ -4992,21 +4992,21 @@ class Mission
 				class Item0
 				{
 					position[]={16613.246,11.134465,12739.366};
-					azimut=-415.14917;
+					azimut=-415.14899;
 					special="NONE";
 					id=285;
 					side="WEST";
 					vehicle="B_officer_F";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_ChopShop_Title"",life_fnc_chopShopMenu,""chop_shop_2"",""cop"",0,false,false,"""",'playerSide == west'];this setObjectTextureGlobal [0,""textures\cop_uniform.paa""];";
+					init="removeBackpack this;removeAllWeapons this;this enableSimulation false;this allowDamage false;this addAction[localize""STR_ChopShop_Title"",life_fnc_chopShopMenu,"""",0,false,false,"""",'playerSide == west'];this setObjectTextureGlobal [0,""textures\cop_uniform.paa""];";
 				};
 			};
 		};
 	};
 	class Vehicles
 	{
-		items=8008;
+		items=8029;
 		class Item0
 		{
 			position[]={8424.4277,49.670139,12769.305};
@@ -89442,10 +89442,259 @@ class Mission
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false; this setVectorUp [0,0,1];this setPos [(getPos this select 0),(getPos this select 1),0];  this enableSimulation false; this setVectorUp [0,0,1];";
 		};
+		class Item8008
+		{
+			position[]={8363.8223,95.425385,25094.529};
+			azimut=-308.66888;
+			id=8294;
+			side="EMPTY";
+			vehicle="Land_TentHangar_V1_F";
+			skill=0.60000002;
+		};
+		class Item8009
+		{
+			position[]={8365.2461,95.997574,25109.102};
+			azimut=1041.1292;
+			id=8295;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8010
+		{
+			position[]={8361.2412,94.688873,25105.891};
+			azimut=1041.1292;
+			id=8296;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8011
+		{
+			position[]={8357.2441,93.224281,25102.66};
+			azimut=1041.1292;
+			id=8297;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8012
+		{
+			position[]={8353.1348,91.915863,25099.389};
+			azimut=1041.1292;
+			id=8298;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8013
+		{
+			position[]={8349.2158,90.757599,25096.283};
+			azimut=1041.1292;
+			id=8299;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8014
+		{
+			position[]={8378.4814,99.814682,25092.762};
+			azimut=1041.1292;
+			id=8300;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8015
+		{
+			position[]={8374.4766,98.493675,25089.551};
+			azimut=1041.1292;
+			id=8301;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8016
+		{
+			position[]={8370.4795,97.207642,25086.32};
+			azimut=1041.1292;
+			id=8302;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8017
+		{
+			position[]={8366.3701,95.651955,25083.049};
+			azimut=1041.1292;
+			id=8303;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8018
+		{
+			position[]={8362.4512,94.409111,25079.943};
+			azimut=1041.1292;
+			id=8304;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8019
+		{
+			position[]={8360.3164,93.498985,25078.506};
+			azimut=1131.1449;
+			id=8305;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8020
+		{
+			position[]={8357.1084,92.295998,25082.508};
+			azimut=1131.1449;
+			id=8306;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8021
+		{
+			position[]={8353.8848,91.265388,25086.523};
+			azimut=1131.1449;
+			id=8307;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8022
+		{
+			position[]={8350.6084,90.668381,25090.625};
+			azimut=1131.1449;
+			id=8308;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8023
+		{
+			position[]={8347.5088,90.175995,25094.545};
+			azimut=1131.1449;
+			id=8309;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8024
+		{
+			position[]={8380.4482,100.74993,25094.148};
+			azimut=1131.5594;
+			id=8310;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8025
+		{
+			position[]={8377.2734,99.656158,25098.178};
+			azimut=1131.5594;
+			id=8311;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8026
+		{
+			position[]={8374.0713,98.945602,25102.197};
+			azimut=1131.5594;
+			id=8312;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8027
+		{
+			position[]={8370.8301,97.895432,25106.33};
+			azimut=1131.5594;
+			id=8313;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
+		class Item8028
+		{
+			position[]={8367.7559,96.876244,25110.27};
+			azimut=1131.5594;
+			id=8314;
+			side="EMPTY";
+			vehicle="Land_CncWall4_F";
+			leader=1;
+			skill=0.60000002;
+			init=" this allowDamage false; this enableSimulation false;";
+			description="Black Bear Security Agent";
+		};
 	};
 	class Markers
 	{
-		items=382;
+		items=385;
 		class Item0
 		{
 			position[]={3652.3613,10.278043,13108.11};
@@ -91269,7 +91518,7 @@ class Mission
 		{
 			position[]={3108.5505,2.0599999,12571.791};
 			name="SCO19 Base";
-			text="Base da Goi";
+			text="Base da GOI";
 			type="mil_warning";
 			colorName="ColorWEST";
 		};
@@ -92624,6 +92873,27 @@ class Mission
 			type="flag_CSAT";
 			angle=-212.54213;
 		};
+		class Item382
+		{
+			position[]={8367.0322,96.536896,25100.314};
+			name="respawn_civilian";
+			type="Empty";
+			angle=-10.914288;
+		};
+		class Item383
+		{
+			position[]={8360.6299,94.267876,25091.893};
+			name="Respawn_west";
+			type="Empty";
+			angle=-10.914288;
+		};
+		class Item384
+		{
+			position[]={8368.3555,96.698341,25091.824};
+			name="respawn_west_1";
+			type="Empty";
+			angle=-10.914288;
+		};
 	};
 	class Sensors
 	{
@@ -92726,7 +92996,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="(player distance thistrigger) < 20;";
-			expActiv="hint ""You have entered a BLUE ZONE. Police and authorized players only inside this area!, This is also a safezone for the Police!""";
+			expActiv="hint ""Essa é uma area restrita somente para Policiais e tambem é uma area safe""";
 			class Effects
 			{
 			};
@@ -92744,7 +93014,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="(player distance thistrigger) < 20;";
-			expActiv="hint ""You have entered a Shoot On Sight Area. SCO19 and authorized players only inside this area!, This is also a safezone for Police!""";
+			expActiv="hint ""Essa é uma area restrita somente para o GOI e tambem é uma area safe """;
 			class Effects
 			{
 			};
@@ -92762,7 +93032,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="(player distance thistrigger) < 20;";
-			expActiv="hint ""Policia a frente diminua a velocidade""";
+			expActiv="hint ""Base da policia a frente diminua a velocidade""";
 			class Effects
 			{
 				soundDet="AlarmSfx";
@@ -92781,7 +93051,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="(player distance thistrigger) < 20;";
-			expActiv="hint ""Policia a frente diminua a velocidade""";
+			expActiv="hint ""Base da Policia a frente diminua a velocidade""";
 			class Effects
 			{
 				soundDet="AlarmSfx";
@@ -92800,7 +93070,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="(player distance thistrigger) < 20;";
-			expActiv="hint ""Policia a frente diminua a velocidade""";
+			expActiv="hint ""Base da Policia a frente diminua a velocidade""";
 			class Effects
 			{
 				soundDet="AlarmSfx";
@@ -92887,7 +93157,7 @@ class Mission
 			position[]={3084.2163,0.11420995,12670.34};
 			a=10;
 			b=15;
-			angle=283.53409;
+			angle=283.534;
 			rectangular=1;
 			activationBy="ANY";
 			repeating=1;
@@ -92895,7 +93165,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="(player distance thistrigger) < 20;";
-			expActiv="hint ""You have entered a Shoot On Sight Area. SCO19 and authorized players only inside this area!, This is also a safezone for Police!""";
+			expActiv="hint ""Voce entrou em uma area restrita somente para o GOI e tambem é uma area safe""";
 			class Effects
 			{
 			};
@@ -93253,7 +93523,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="(player distance thistrigger) < 20;";
-			expActiv="hint ""You have entered a BLUE ZONE. Police and authorized players only inside this area!, This is also a safezone for the Police!""";
+			expActiv="hint ""Voce esta na fronteira, por favor reduza a velocidade e desca quando solicitado""";
 			class Effects
 			{
 			};
@@ -93305,7 +93575,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="(player distance thistrigger) < 20;";
-			expActiv="hint ""You have entered a BLUE ZONE. Police and authorized players only inside this area!, This is also a safezone for the Police!""";
+			expActiv="hint ""Voce esta na fronteira, por favor reduza a velocidade e desca quando solicitado""";
 			class Effects
 			{
 			};
@@ -93357,7 +93627,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="(player distance thistrigger) < 20;";
-			expActiv="hint ""You have entered a BLUE ZONE. Police and authorized players only inside this area!, This is also a safezone for the Police!""";
+			expActiv="hint ""Voce esta na fronteira, por favor reduza a velocidade e desca quando solicitado""";
 			class Effects
 			{
 			};
@@ -93409,7 +93679,7 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expCond="(player distance thistrigger) < 20;";
-			expActiv="hint ""You have entered a BLUE ZONE. Police and authorized players only inside this area!, This is also a safezone for the Police!""";
+			expActiv="hint ""Voce esta na fronteira, por favor reduza a velocidade e desca quando solicitado""";
 			class Effects
 			{
 			};
