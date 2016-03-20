@@ -13,7 +13,10 @@ switch (playerSide) do {
 		//Rob person
 		life_actions = life_actions + [player addAction[localize "STR_pAct_RobPerson",life_fnc_robAction,"",0,false,false,"",'
 		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable["robbed",FALSE]) ']];
-	};
+		//Kidnapping
+		life_actions = [player addAction["<t color='#00FF00'>Start Kidnapping</t>",life_fnc_restrainAction,cursorTarget,9999999,false,false,"",'
+        	!isNull cursorTarget && player distance cursorTarget < 5 && isPlayer cursorTarget && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1 ']];
+		};
 	case west: {
 		//CopEnter - Driver Seat
 		life_actions = life_actions + [player addAction[localize "STR_pAct_DriverSeat",life_fnc_copEnter,"driver",200,false,false,"",'
