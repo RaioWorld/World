@@ -161,7 +161,7 @@ life_illegal_stuffs =[
 		"H_Beret_blk_POLICE",
 		"H_MilCap_gry",
 		"H_Cap_blk"];
-		life_all_stuffs =[
+life_all_stuffs =[
 		"V_PlateCarrier1_blk",
 		"V_HarnessO_brn",
 		"V_BandollierB_cbr",
