@@ -40,6 +40,11 @@ _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
 
 if("ToolKit" in (items player) && (damage _curTarget < 1)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 
+if(playerSide == civilian) then {
+	_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
+	_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
+	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
+
 if(playerSide == west) then {
 	_Btn2 ctrlSetText localize "STR_vInAct_Registration";
 	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
@@ -133,9 +138,4 @@ if(playerSide == west) then {
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
 };
-if(playerSide == civilian) then {
-_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
-_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;
-";
-if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;
-};
+
