@@ -39,14 +39,16 @@ player createDiarySubject ["controles","Controles"];
 				Farms Legais<br/><br/>
 				1. Petroleo e oleo: 3200<br/>
 				2. Cobre: 2000<br/>
-				3. Metal: 3200<br/>
-				4. Sal: 1450<br/>
-				5. Cimento: 1950<br/>
+				3. Ferro: 3200<br/>
+				4. Metal: 3200<br/>
+				5. Sal: 1450<br/>
+				6. Vidro: 1450<br/>
+				7. Cimento: 1950<br/>
 				Farms Ilegais<br/><br/>
-				1.Heroina: 3800<br/>
+				1.Heroina: 4000<br/>
 				2.Maconha: 3600<br/>
-				3.Cocaina: 4000<br/>
-				4.Diamante Ilegal: 5000<br/>
+				3.Cocaina: 4500<br/>
+				4.Diamante: 5000<br/>
 				5.Tartaruga: <br/><br/>
 				A barra de ouro só é adquirida em assalto à reserva.<br/><br/>
 				Barra de Ouro: 95000<br/><br/>
