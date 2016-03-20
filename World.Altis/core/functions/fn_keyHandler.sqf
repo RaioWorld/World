@@ -68,13 +68,13 @@ switch (_code) do {
 
 	//Surrender (Shift + B)
 	case 15: {
-		if(_shift) then {
+		//if(_shift) then {
 			if(player GVAR ["playerSurrender",false]) then {
 				player SVAR ["playerSurrender",false,true];
 			} else {
 				[] spawn life_fnc_surrender;
 			};
-			_handled = true;
+		//	_handled = true;
 		};
 	};
 
