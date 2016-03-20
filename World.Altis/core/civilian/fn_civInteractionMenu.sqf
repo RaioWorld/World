@@ -4,14 +4,14 @@
 	Edited by: Siro
 	Description:	Interaction menue for civilians for escorting people etc.
 */
-#define Btn1 37450#
-define Btn2 37451#
-define Btn3 37452#
-define Btn4 37453#
-define Btn5 37454#
-define Btn6 37455#
-define Btn7 37456#
-define Title 37401
+#define Btn1 37450
+#define Btn2 37451
+#define Btn3 37452
+#define Btn4 37453
+#define Btn5 37454
+#define Btn6 37455
+#define Btn7 37456
+#define Title 37401
 
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6"];
 if(!dialog) then {
