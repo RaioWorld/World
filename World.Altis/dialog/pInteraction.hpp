@@ -151,6 +151,7 @@ class pInteraction_Menu
 		w = 0.24;
 		h = 0.038;
 		};
+		
 		class ButtonNine : life_RscButtonMenu
 		{
 		idc = 37458;
