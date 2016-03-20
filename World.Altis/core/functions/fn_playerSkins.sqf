@@ -33,7 +33,7 @@ switch(playerSide) do {
 		};
 	};
 	case west: {
-		if(uniform player == "B_officer_F") then {
+		if(uniform player == "U_Rangemaster") then {
 			player setObjectTextureGlobal [0, "textures\cop_uniform.paa"];
 		};
 	};
