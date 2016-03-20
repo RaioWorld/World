@@ -132,9 +132,9 @@ class reb_car1 {
         vehicles[] = {
             { "C_Offroad_01_F", { "", "OffroadPM", -1 } },
             { "C_SUV_01_F", { "", "", -1 } },
-            { "C_Hatchback_01_sport_F", { "life_coplevel", "HatchPM", 1 } },
-            { "B_MRAP_01_F", { "life_coplevel", "HunterBackPM","HunterFrontPM", 2 } },
-            { "B_G_Offroad_01_armed_F", { "life_coplevel", "", 3 } }
+            { "C_Hatchback_01_sport_F", { "life_coplevel", "HatchPM", -1 } },
+            { "B_MRAP_01_F", { "life_coplevel", "HunterBackPM","HunterFrontPM", -1 } },
+            { "B_G_Offroad_01_armed_F", { "life_coplevel", "", -1 } }
         };
     };
 
@@ -142,8 +142,8 @@ class reb_car1 {
         side = "cop";
         vehicles[] = {
             { "B_Heli_Light_01_F", { "", "", -1 } },
-            { "O_Heli_Light_02_unarmed_F",{ "", "", 2 } },
-            { "I_Heli_light_03_unarmed_F",{ "", "", 3 } }
+            { "O_Heli_Light_02_unarmed_F",{ "", "", -1 } },
+            { "I_Heli_light_03_unarmed_F",{ "", "hellcat_cop", -1 } }
         };
     };
 
@@ -152,7 +152,7 @@ class reb_car1 {
         vehicles[] = {
             { "B_Boat_Transport_01_F", { "", "", -1 } },
             { "C_Boat_Civil_01_police_F", { "", "", -1 } },
-            { "B_Boat_Armed_01_minigun_F", { "life_coplevel", "SCALAR", 3 } },
+            { "B_Boat_Armed_01_minigun_F", { "life_coplevel", "SCALAR", -1 } },
             { "B_SDV_01_F", { "", "", -1 } }
         };
     };
