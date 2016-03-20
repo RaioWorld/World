@@ -231,7 +231,7 @@ class Mission
 					offsetY=2;
 					id=0;
 					side="WEST";
-					vehicle="B_officer_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_1";
