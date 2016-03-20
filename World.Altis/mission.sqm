@@ -194,7 +194,7 @@ class Mission
 	randomSeed=2004553;
 	class Intel
 	{
-		briefingName="Mafia Altis Life | TS: mafiaaltisbrasil.meuts3.com.br ";
+		briefingName="Mafia Altis Life";
 		overviewText="Mafia Altis Life | TS: mafiaaltisbrasil.meuts3.com.br ";
 		startWeather=0.1;
 		startWind=0.29999998;
@@ -52508,13 +52508,13 @@ class Mission
 		class Item4423
 		{
 			position[]={15705.054,14.4725,17457.084};
-			azimut=102.38525;
+			azimut=102.385;
 			id=4709;
 			side="EMPTY";
 			vehicle="Land_BarGate_F";
 			leader=1;
 			skill=0.60000002;
-			init="this allowDamage false;";
+			init="this enableSimulation true;this setdir 36.048;this setposATL [3354.869629,12967.146484,0];this setVectorUp [0,0,1];this allowdamage false";
 		};
 		class Item4424
 		{
@@ -67542,35 +67542,35 @@ class Mission
 		class Item5939
 		{
 			position[]={15708.27,14.617515,17471.246};
-			azimut=282.18478;
+			azimut=282.185;
 			id=6225;
 			side="EMPTY";
 			vehicle="Land_BarGate_F";
 			leader=1;
 			skill=0.60000002;
-			init="this allowDamage false;";
+			init="this enableSimulation true;this setdir 36.048;this setposATL [3354.869629,12967.146484,0];this setVectorUp [0,0,1];this allowdamage false";
 		};
 		class Item5940
 		{
 			position[]={15663.963,14.712731,17465.711};
-			azimut=102.38525;
+			azimut=102.385;
 			id=6226;
 			side="EMPTY";
 			vehicle="Land_BarGate_F";
 			leader=1;
 			skill=0.60000002;
-			init="this allowDamage false;";
+			init="this enableSimulation true;this setdir 36.048;this setposATL [3354.869629,12967.146484,0];this setVectorUp [0,0,1];this allowdamage false";
 		};
 		class Item5941
 		{
 			position[]={15667.143,14.860176,17480.641};
-			azimut=282.18478;
+			azimut=282.185;
 			id=6227;
 			side="EMPTY";
 			vehicle="Land_BarGate_F";
 			leader=1;
 			skill=0.60000002;
-			init="this allowDamage false;";
+			init="this enableSimulation true;this setdir 36.048;this setposATL [3354.869629,12967.146484,0];this setVectorUp [0,0,1];this allowdamage false";
 		};
 		class Item5942
 		{
@@ -89695,7 +89695,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=386;
+		items=387;
 		class Item0
 		{
 			position[]={3652.3613,10.278043,13108.11};
@@ -91519,7 +91519,7 @@ class Mission
 		{
 			position[]={3108.5505,2.0599999,12571.791};
 			name="SCO19 Base";
-			text="Base da GOI";
+			text="Base da GOE";
 			type="mil_warning";
 			colorName="ColorWEST";
 		};
@@ -91960,7 +91960,7 @@ class Mission
 		};
 		class Item276
 		{
-			position[]={8869.0479,78.40583,23437.355};
+			position[]={8868.8682,78.413879,23437.268};
 			name="safe_area_5_3";
 			text="13";
 			markerType="ELLIPSE";
@@ -92231,8 +92231,8 @@ class Mission
 			name="Vip 1_1";
 			text="Loja VIP";
 			type="Minefield";
-			colorName="ColorYellow";
-			angle=419.64386;
+			colorName="ColorOrange";
+			angle=419.64401;
 		};
 		class Item301
 		{
@@ -92240,8 +92240,8 @@ class Mission
 			name="pyrgoslz_1_1_1";
 			text="Área VIP";
 			type="loc_Bush";
-			colorName="ColorYellow";
-			angle=320.23254;
+			colorName="ColorOrange";
+			angle=320.233;
 		};
 		class Item302
 		{
@@ -92904,10 +92904,16 @@ class Mission
 			type="o_service";
 			angle=533.67401;
 		};
+		class Item386
+		{
+			position[]={8441.7461,85.197502,25219.588};
+			name="mafia";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
-		items=44;
+		items=48;
 		class Item0
 		{
 			position[]={3353.9417,2.1269825,12965.73};
@@ -92978,7 +92984,7 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={5231.751,18.625977,14487.055};
+			position[]={5231.751,18.617313,14487.52};
 			a=5;
 			b=13;
 			angle=85.511101;
@@ -93488,10 +93494,10 @@ class Mission
 		};
 		class Item32
 		{
-			position[]={15665.885,14.844687,17479.189};
+			position[]={15667.032,14.857754,17480.414};
 			a=5;
 			b=13;
-			angle=-81.26844;
+			angle=101.97688;
 			rectangular=1;
 			activationBy="WEST";
 			repeating=1;
@@ -93505,10 +93511,10 @@ class Mission
 		};
 		class Item33
 		{
-			position[]={15665.722,14.841992,17478.936};
+			position[]={15667.212,14.86043,17480.664};
 			a=5;
 			b=13;
-			angle=-81.26844;
+			angle=101.97688;
 			rectangular=1;
 			activationBy="GUER";
 			repeating=1;
@@ -93522,10 +93528,10 @@ class Mission
 		};
 		class Item34
 		{
-			position[]={15667.102,14.83709,17478.477};
+			position[]={15623.193,14.838769,17479.176};
 			a=5;
 			b=5;
-			angle=-345.414;
+			angle=-262.17654;
 			rectangular=1;
 			activationBy="ANY";
 			repeating=1;
@@ -93540,10 +93546,10 @@ class Mission
 		};
 		class Item35
 		{
-			position[]={15663.365,14.735879,17468.02};
+			position[]={15664.088,14.709495,17465.398};
 			a=5;
 			b=13;
-			angle=-81.26844;
+			angle=-258.98416;
 			rectangular=1;
 			activationBy="WEST";
 			repeating=1;
@@ -93557,10 +93563,10 @@ class Mission
 		};
 		class Item36
 		{
-			position[]={15663.202,14.733954,17467.766};
+			position[]={15664.26,14.711411,17465.654};
 			a=5;
 			b=13;
-			angle=-81.26844;
+			angle=-258.98416;
 			rectangular=1;
 			activationBy="GUER";
 			repeating=1;
@@ -93574,10 +93580,10 @@ class Mission
 		};
 		class Item37
 		{
-			position[]={15664.582,14.725984,17467.307};
+			position[]={15573.349,14.635808,17485.109};
 			a=5;
 			b=5;
-			angle=-345.414;
+			angle=-442.26465;
 			rectangular=1;
 			activationBy="ANY";
 			repeating=1;
@@ -93592,10 +93598,10 @@ class Mission
 		};
 		class Item38
 		{
-			position[]={15705.415,14.485735,17458.709};
+			position[]={15704.325,14.469517,17456.348};
 			a=5;
 			b=13;
-			angle=-81.26844;
+			angle=-81.487862;
 			rectangular=1;
 			activationBy="WEST";
 			repeating=1;
@@ -93609,10 +93615,10 @@ class Mission
 		};
 		class Item39
 		{
-			position[]={15705.252,14.484246,17458.455};
+			position[]={15704.169,14.467937,17456.09};
 			a=5;
 			b=13;
-			angle=-81.26844;
+			angle=-81.487862;
 			rectangular=1;
 			activationBy="GUER";
 			repeating=1;
@@ -93626,10 +93632,10 @@ class Mission
 		};
 		class Item40
 		{
-			position[]={15706.632,14.472593,17457.996};
+			position[]={15763.614,14.209461,17445.195};
 			a=5;
 			b=5;
-			angle=-345.414;
+			angle=-335.42273;
 			rectangular=1;
 			activationBy="ANY";
 			repeating=1;
@@ -93644,7 +93650,7 @@ class Mission
 		};
 		class Item41
 		{
-			position[]={15707.393,14.602087,17469.57};
+			position[]={15708.324,14.619441,17471.43};
 			a=5;
 			b=13;
 			angle=-81.26844;
@@ -93661,7 +93667,7 @@ class Mission
 		};
 		class Item42
 		{
-			position[]={15707.229,14.599903,17469.316};
+			position[]={15708.16,14.617266,17471.176};
 			a=5;
 			b=13;
 			angle=-81.26844;
@@ -93678,7 +93684,7 @@ class Mission
 		};
 		class Item43
 		{
-			position[]={15708.609,14.587047,17468.857};
+			position[]={15738.592,14.296963,17454.271};
 			a=5;
 			b=5;
 			angle=-345.414;
@@ -93690,6 +93696,74 @@ class Mission
 			age="UNKNOWN";
 			expCond="(player distance thistrigger) < 20;";
 			expActiv="hint ""Voce esta na fronteira, por favor reduza a velocidade e desca quando solicitado""";
+			class Effects
+			{
+			};
+		};
+		class Item44
+		{
+			position[]={5140.1953,17.315155,14479.631};
+			a=5;
+			b=13;
+			angle=86.704651;
+			rectangular=1;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="BarGate11 animate [""Door_1_rot"", 1];";
+			expDesactiv="BarGate11 animate [""Door_1_rot"", 0];";
+			class Effects
+			{
+			};
+		};
+		class Item45
+		{
+			position[]={5140.3013,17.316854,14479.911};
+			a=5;
+			b=13;
+			angle=86.704651;
+			rectangular=1;
+			activationBy="GUER";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="BarGate11 animate [""Door_1_rot"", 1];";
+			expDesactiv="BarGate11 animate [""Door_1_rot"", 0];";
+			class Effects
+			{
+			};
+		};
+		class Item46
+		{
+			position[]={5231.7544,18.619537,14487.402};
+			a=5;
+			b=13;
+			angle=84.806671;
+			rectangular=1;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="BarGate11 animate [""Door_1_rot"", 1];";
+			expDesactiv="BarGate11 animate [""Door_1_rot"", 0];";
+			class Effects
+			{
+			};
+		};
+		class Item47
+		{
+			position[]={5231.8472,18.615234,14487.692};
+			a=5;
+			b=13;
+			angle=84.806671;
+			rectangular=1;
+			activationBy="GUER";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="BarGate11 animate [""Door_1_rot"", 1];";
+			expDesactiv="BarGate11 animate [""Door_1_rot"", 0];";
 			class Effects
 			{
 			};
