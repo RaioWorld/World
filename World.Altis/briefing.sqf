@@ -48,7 +48,7 @@ player createDiarySubject ["controles","Controles"];
 				1.Heroina: 4000<br/>
 				2.Maconha: 3600<br/>
 				3.Cocaina: 4500<br/>
-				4.Diamante: 5000<br/>
+				4.Diamante: 5500<br/>
 				5.Tartaruga: <br/><br/>
 				A barra de ouro só é adquirida em assalto à reserva.<br/><br/>
 				Barra de Ouro: 95000<br/><br/>
