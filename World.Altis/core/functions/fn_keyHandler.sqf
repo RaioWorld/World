@@ -67,14 +67,25 @@ switch (_code) do {
 	};
 
 	//Surrender (Shift + B)
-	case 15: {
-		//if(_shift) then {
-			if(player GVAR ["playerSurrender",false]) then {
-				player SVAR ["playerSurrender",false,true];
-			} else {
-				[] spawn life_fnc_surrender;
+	case 15:
+	{
+		//if(_shift) then {_handled = true;};
+
+		if (!_shift && !_alt && !_ctrlKey) then
+		{
+		if((life_nottoofast != 0) && ((time - life_nottoofast) < 2)) exitWith {};
+		life_nottoofast = time;
+		
+			if (vehicle player == player && !(player GVAR ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
+			{
+				if (player GVAR ["surrender", false]) then
+				{
+					player SVAR ["surrender", false, true];
+				} else
+				{
+					[] spawn life_fnc_surrender;
+				};
 			};
-		//	_handled = true;
 		};
 	};
 
@@ -104,6 +115,8 @@ switch (_code) do {
 
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey: {
+	if((life_nottoofast != 0) && ((time - life_nottoofast) < 1)) exitWith {};
+		life_nottoofast = time;
 		if(!life_action_inUse) then {
 			[] spawn  {
 				private "_handle";
@@ -198,6 +211,8 @@ switch (_code) do {
 	//F Key
 	case 33: {
 		if(playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
+			if((life_nottoofast != 0) && ((time - life_nottoofast) < 2)) exitWith {};
+			life_nottoofast = time;
 			[] spawn {
 				life_siren_active = true;
 				sleep 4.7;
