@@ -6780,6 +6780,12 @@
       <German>gunner seat</German>
       <French>Place tireur</French>
     </Key>
+    <Key ID="STR_pInAct_SearchWeapons">
+      <Original>Search Weapons</Original>
+      <English>Search Weapons</English>
+      <Italian>Perquisisci</Italian>
+			<Portuguese>Buscar por armas</Portuguese>
+			</Key>
     <Key ID="STR_pAct_GoOut">
       <Original>Vá para fora do veículo</Original>
       <English>Go out of vehicle</English>
