@@ -460,7 +460,7 @@ class WeaponShops {
         accs[] = {};
     };
     class mercado_negro {
-        name = "Mercado Negro";
+        name = "Mercado Negro Arma";
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
