@@ -236,7 +236,7 @@ class Clothing {
         license = "";
         side = "med";
         uniforms[] = {
-             "NONE", "Remove Uniform", 0, { "", "", -1 } },
+            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_Rangemaster", "EMS Uniform", 50, { "", "", -1 } },
             { "U_B_Wetsuit", "", 2000, { "", "", -1 } }
         };
