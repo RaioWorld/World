@@ -197,5 +197,5 @@ _cappello = "";
 	} else {
 	_uniformeItems = "Essa pessoa não tem um uniforme.<br/>";
 	};
-	hint parseText format["<t color='#FFFFFF'><t size='1'>Armi Equipaggiate:</t></t><br/><t size ='0.7'>%1</t><br/><t color='#FFFFFF'><t size='1'>Contenuto Zaino</t></t><br/><t size ='0.7'>%2</t><br/><t color='#FFFFFF'><t size='1'>Veste</t></t><br/><t size ='0.7'>%3</t><br/><t color='#FFFFFF'><t size='1'>Contenuto Veste</t></t><br/><t size ='0.7'>%4</t><br/><t color='#FFFFFF'><t size='1'>Cappello</t></t><br/><t size ='0.7'>%5</t><br/><t color='#FFFFFF'><t size='1'>Contenuto Uniforme</t></t><br/><t size ='0.7'>%6</t><br/>", _weapon,_bpack,_veste,_vestContainer,_cappello,_uniformeItems];
+	hint parseText format["<t color='#FFFFFF'><t size='1'>Armas Equipadas:</t></t><br/><t size ='0.7'>%1</t><br/><t color='#FFFFFF'><t size='1'>Conteúdo da Mochila</t></t><br/><t size ='0.7'>%2</t><br/><t color='#FFFFFF'><t size='1'>Colete</t></t><br/><t size ='0.7'>%3</t><br/><t color='#FFFFFF'><t size='1'>Conteúdo do Colete</t></t><br/><t size ='0.7'>%4</t><br/><t color='#FFFFFF'><t size='1'>Cabeça</t></t><br/><t size ='0.7'>%5</t><br/><t color='#FFFFFF'><t size='1'>Conteúdo do Uniforme</t></t><br/><t size ='0.7'>%6</t><br/>", _weapon,_bpack,_veste,_vestContainer,_cappello,_uniformeItems];
 	
