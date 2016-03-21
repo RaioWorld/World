@@ -16,9 +16,9 @@ _uniformeItems = "";
 _cappello = "";
     //_unit = cursorTarget;
 	if (isNull _unit) exitWith {};
-	hint "Ricerca equipaggiamento in corso...";
+	hint "Verificação de equipamentos em curso...";
 	sleep 2;
-	if (player distance _unit > 5 || !alive player || !alive _unit) exitWith {hint "Non puoi cercare su questa persona."};
+	if (player distance _unit > 5 || !alive player || !alive _unit) exitWith {hint "Você não pode fazer a busca nessa pessoa."};
 	_primaryWeapon = primaryWeapon _unit;
 	_handgunWeapon = handgunWeapon _unit;
 	_vest = vest _unit;
@@ -73,7 +73,7 @@ _cappello = "";
 	};
 	};
     if(_weapon == "") then {
-	_weapon = "Nessun'arma equipaggiata<br/>";
+	_weapon = "Nenhuma arma equipada<br/>";
 	};
 	if(backPack _unit != "") then {
     _backpack = backpackItems _unit;
@@ -104,10 +104,10 @@ _cappello = "";
 	}
 	forEach _backpack;
     } else {
-	_bpack = "Lo zaino e' vuoto.<br/>";
+	_bpack = "A mochila está vazia.<br/>";
     };
 	} else {
-	_bpack = "Il giocatore non ha uno zaino.<br/>";
+	_bpack = "Essa pessoa não tem uma mochila.<br/>";
 	};
 	if( _vest != "" ) then {
 	_vestItems = vestItems _unit;
@@ -147,10 +147,10 @@ _cappello = "";
 	};
 	}forEach _vestItems;
 	}else {
-	_vestContainer = "La veste e' vuota. <br/>";
+	_vestContainer = "O colete está vazio. <br/>";
 	};
 	} else {
-	_veste = "Il giocatore non ha una veste.<br/>";
+	_veste = "Essa pessoa não tem um colete.<br/>";
 	};
 	if(_headgear != "") then {
 	if(isClass(configFile >> "CfgVehicles" >> "Headgear_"+_headgear)) then {
@@ -163,7 +163,7 @@ _cappello = "";
 	_cappello = format["<t color='#FF0000'>%1</t><br/>",_displayName];
 	};
 	} else {
-	_cappello = "Il giocatore non ha un cappello.<br/>";
+	_cappello = "Essa pessoa não tem um chapéu.<br/>";
 	};
 	if(uniform _unit != "") then {
 	_uniformItems = uniformItems _unit;
@@ -192,10 +192,10 @@ _cappello = "";
 	};
 	}forEach _uniformItems;
 	}else {
-	_uniformeItems = "L'uniforme e' vuota.<br/>";
+	_uniformeItems = "O uniforme está vazio.<br/>";
 	};
 	} else {
-	_uniformeItems = "Il giocatore non ha un'uniforme.<br/>";
+	_uniformeItems = "Essa pessoa não tem um uniforme.<br/>";
 	};
 	hint parseText format["<t color='#FFFFFF'><t size='1'>Armi Equipaggiate:</t></t><br/><t size ='0.7'>%1</t><br/><t color='#FFFFFF'><t size='1'>Contenuto Zaino</t></t><br/><t size ='0.7'>%2</t><br/><t color='#FFFFFF'><t size='1'>Veste</t></t><br/><t size ='0.7'>%3</t><br/><t color='#FFFFFF'><t size='1'>Contenuto Veste</t></t><br/><t size ='0.7'>%4</t><br/><t color='#FFFFFF'><t size='1'>Cappello</t></t><br/><t size ='0.7'>%5</t><br/><t color='#FFFFFF'><t size='1'>Contenuto Uniforme</t></t><br/><t size ='0.7'>%6</t><br/>", _weapon,_bpack,_veste,_vestContainer,_cappello,_uniformeItems];
 	
