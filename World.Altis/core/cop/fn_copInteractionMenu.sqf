@@ -76,7 +76,7 @@ _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 //Set Cerca Armi
 _Btn8 ctrlSetText localize "STR_pInAct_SearchWeapons";
 _Btn8 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_copSearchPlayer;closeDialog 0;";
-_Btn9 ctrlSetText "Sequestra";
+_Btn9 ctrlSetText "Apreender";
 _Btn9 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_sequestroCheck;";
 
 //Check that you are near a place to jail them.
