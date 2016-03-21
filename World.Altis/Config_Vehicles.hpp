@@ -131,7 +131,7 @@ class reb_car1 {
             { "C_Offroad_01_F", { "", "OffroadPM", -1 } },
             { "C_SUV_01_F", { "", "SuvPM", -1 } },
             { "C_Hatchback_01_sport_F", { "life_coplevel", "HatchPM", -1 } },
-            { "B_MRAP_01_F", { "life_coplevel", "HunterBackPM","HunterFrontPM", -1 } },
+            { "B_MRAP_01_F", { "life_coplevel", "", -1 } },
             { "B_G_Offroad_01_armed_F", { "life_coplevel", "OffroadPM", -1 } }
         };
     };
@@ -149,7 +149,6 @@ class reb_car1 {
         vehicles[] = {
             { "B_Boat_Transport_01_F", { "", "", -1 } },
             { "C_Boat_Civil_01_police_F", { "", "", -1 } },
-            { "B_Boat_Armed_01_minigun_F", { "life_coplevel", "SCALAR", -1 } },
             { "B_SDV_01_F", { "", "", -1 } }
         };
     };
