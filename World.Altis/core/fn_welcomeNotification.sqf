@@ -33,6 +33,7 @@ _message = _message + "Use a tecla windows para minerar/farmar   <br /><br />";
 _message = _message + "Use a tecla TAB para se render   <br /><br />";
 _message = _message + "O jogador precisa estar nocauteado para sequestrá-lo.  <br /><br />";
 _message = _message + "O servidor está salvando a localização dos jogadores.   <br /><br />";
+_message = _message + "O Mercado Negro compra diamantes e vende alguns equipamentos ilegais.   <br /><br />";
 _message = _message + "RESPEITE A FAMÍLIA E SERÁ RESPEITADO!   <br /><br />";
 
 //Fill only the first text
