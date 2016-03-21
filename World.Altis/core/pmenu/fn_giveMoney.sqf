@@ -7,6 +7,8 @@
 	Gives the selected amount of money to the selected player.
 */
 private["_unit","_amount"];
+if((life_nottoofast != 0) && ((time - life_nottoofast) < 2)) exitWith {hint "Não tão rápido!";};
+life_nottoofast = time;
 _amount = ctrlText 2018;
 ctrlShow[20055,false];
 if((lbCurSel 2100) == -1) exitWith {hint "No one was selected!";ctrlShow[20055,true];};
