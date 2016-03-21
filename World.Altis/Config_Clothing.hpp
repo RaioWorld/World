@@ -537,4 +537,29 @@ class Clothing {
             { "NONE", "Remove Backpack", 0, { "", "", -1 } }
         };
     };
+    class mercado_negroC {
+        title = "Mercado Negro Roupa";
+        license = "";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
+            { "U_IG_Guerilla1_1", "Guerilla Garment", 2500, {"", "", -1} }
+        };
+        headgear[] = {
+            { "NONE", "Remove Hat", 0, { "", "", -1 } },
+            { "H_MilCap_oucamo", "", 1200, { "", "", -1 } }
+        };
+        goggles[] = {
+            { "NONE", "Remove Glasses", 0, { "", "", -1 } },
+            { "G_Balaclava_lowprofile", "", 75, { "", "", -1 } },
+            { "G_Bandanna_beast", "", 150, { "", "", -1 } }
+        };
+        vests[] = {
+            { "NONE", "Remove Vest", 0, { "", "", -1 } },
+            { "V_PlateCarrier1_rgr", "Carrier Lite (Green)", 5000, { "", "", -1 } }
+        };
+        backpacks[] = {
+            { "NONE", "Remove Backpack", 0, { "", "", -1 } }
+        };
+    };
 };
