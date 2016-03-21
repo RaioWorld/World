@@ -471,7 +471,9 @@ class WeaponShops {
         };
         mags[] = {
             { "30Rnd_65x39_caseless_green", "", 2000 },
-            { "30Rnd_65x39_caseless_green_mag_Tracer", "", 2000 }
+            { "30Rnd_65x39_caseless_green_mag_Tracer", "", 2000 },
+            { "30Rnd_65x39_caseless_mag", "", 2000 },
+            { "30Rnd_65x39_caseless_mag_Tracer", "", 2000 }
         };
         accs[] = {
             { "optic_Arco", "", 4000 }
