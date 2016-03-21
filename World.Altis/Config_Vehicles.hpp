@@ -120,8 +120,8 @@ class reb_car1 {
     class med_air_hs {
         side = "med";
         vehicles[] = {
-            { "B_Heli_Light_01_F", { "", "", -1 } },
-            { "O_Heli_Light_02_unarmed_F", { "", "", -1 } }
+            { "B_Heli_Light_01_F", { "", "LittleBirdSamu", -1 } },
+            { "O_Heli_Light_02_unarmed_F", { "", "orca_med", -1 } }
         };
     };
 
@@ -129,10 +129,10 @@ class reb_car1 {
         side = "cop";
         vehicles[] = {
             { "C_Offroad_01_F", { "", "OffroadPM", -1 } },
-            { "C_SUV_01_F", { "", "", -1 } },
+            { "C_SUV_01_F", { "", "SuvPM", -1 } },
             { "C_Hatchback_01_sport_F", { "life_coplevel", "HatchPM", -1 } },
             { "B_MRAP_01_F", { "life_coplevel", "HunterBackPM","HunterFrontPM", -1 } },
-            { "B_G_Offroad_01_armed_F", { "life_coplevel", "", -1 } }
+            { "B_G_Offroad_01_armed_F", { "life_coplevel", "OffroadPM", -1 } }
         };
     };
 
@@ -140,7 +140,7 @@ class reb_car1 {
         side = "cop";
         vehicles[] = {
             { "B_Heli_Light_01_F", { "", "LittleBirdPM", -1 } },
-            { "O_Heli_Light_02_unarmed_F",{ "", "", -1 } },
+            { "O_Heli_Light_02_unarmed_F",{ "", "orca_PM", -1 } },
         };
     };
 
@@ -305,7 +305,12 @@ class LifeCfgVehicles {
         vItemSpace = 65;
         licenses[] = { {"rebel"}, {""}, {""}, {""} };
         rentalprice[] = { 4000000, 1000000, -1, -1 };
-        textures[] = { };
+        textures[] = {
+        	 { "Policia", "cop", {
+                "textures\cop\OffroadPM.paa"
+            } }
+        	
+        };
     };
 
     class C_Boat_Civil_01_F {
@@ -376,7 +381,7 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } },
             { "Policia", "cop", {
-                "textures\Cop\OffroadPM.paa"
+                "textures\cop\OffroadPM.paa"
             } }
         };
     };
@@ -554,7 +559,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             } },
             { "Policia", "cop", {
-                "textures\Cop\SuvPM.paa"
+                "textures\cop\SuvPM.paa"
             } },
              { "Medico", "med", {
                 "textures\medic\SUVSAMU.paa"
@@ -596,8 +601,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         rentalprice[] = { -1, 30000, -1, -1 };
         textures[] = {
             { "Caveirao", "cop", {
-                "textures\Cop\HunterBackPM.paa",
-                "textures\Cop\HunterFrontPM.paa"
+                "textures\cop\HunterBackPM.paa",
+                "textures\cop\HunterFrontPM.paa"
             } }
         };
     };
@@ -619,7 +624,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         rentalprice[] = { 1200000, 75000, 50000, -1 };
         textures[] = {
             { "Policia", "cop", {
-                "textures\Cop\LittleBirdPM.paa"
+                "textures\cop\LittleBirdPM.paa"
             } },
             { "Monster", "civ", {
                 "textures\Civ\Civ_hummingbird_monster.paa"
@@ -664,7 +669,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             } },
             { "Medico", "med", {
-                "textures\medic\EMS_LTB.paa"
+                "textures\medic\LittleBirdSamu.paa"
             } }
         };
     };
@@ -688,6 +693,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Medico", "med", {
                 "textures\medic\orca_med.paa"
+            } },
+            { "Policia", "cop", {
+                "textures\cop\orca_PM.paa"
             } }
         };
     };
