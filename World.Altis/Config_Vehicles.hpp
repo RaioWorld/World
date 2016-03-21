@@ -679,8 +679,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {"rebel" }, {"cAir"}, {"mAir"}, {""} };
         rentalprice[] = { 2750000, 150000, 75000, -1 };
         textures[] = {
-            { "Black", "cop", {
-                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
+            { "Policia", "cop", {
+                "textures\cop\orca_PM.paa"
             } },
             { "White / Blue", "civ", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"
@@ -693,9 +693,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Medico", "med", {
                 "textures\medic\orca_med.paa"
-            } },
-            { "Policia", "cop", {
-                "textures\cop\orca_PM.paa"
             } }
         };
     };
