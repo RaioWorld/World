@@ -18,7 +18,7 @@ _cappello = "";
 	if (isNull _unit) exitWith {};
 	hint "Verificação de equipamentos em curso...";
 	sleep 2;
-	if (player distance _unit > 5 || !alive player || !alive _unit) exitWith {hint "Você não pode fazer a busca nessa pessoa."};
+	if (player distance _unit > 5 || !alive player || !alive _unit) exitWith {hint "Você não pode fazer a verificação nessa pessoa."};
 	_primaryWeapon = primaryWeapon _unit;
 	_handgunWeapon = handgunWeapon _unit;
 	_vest = vest _unit;
