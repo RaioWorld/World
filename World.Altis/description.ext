@@ -1,5 +1,5 @@
 author = "Tonic editada por Digone";
-loadScreen = "textures\armalife.jpg";
+loadScreen = "textures\placas\welcome.jpg";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
