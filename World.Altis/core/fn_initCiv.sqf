@@ -30,7 +30,6 @@ if(life_is_alive && !life_is_arrested) then {
 		if(life_is_arrested) then {
 			life_is_arrested = false;
 			[player,true] spawn life_fnc_jail;
-			[] spawn life_fnc_introcam;
 			[] execVM "core\welcome.sqf";
 		};
 	};
