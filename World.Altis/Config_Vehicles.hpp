@@ -351,7 +351,7 @@ class LifeCfgVehicles {
     class C_Offroad_01_F {
         vItemSpace = 65;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        rentalprice[] = { 17000, 10000, 10000, -1 };
+        rentalprice[] = { 35000, 15000, 10000, -1 };
         textures[] = {
             { "Red", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
