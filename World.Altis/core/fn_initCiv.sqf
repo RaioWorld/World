@@ -24,7 +24,6 @@ if(life_is_alive && !life_is_arrested) then {
 		[] call life_fnc_spawnMenu;
 		waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 		waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
-		[] spawn life_fnc_introcam;
 		[] execVM "core\welcome.sqf";
 	} else {
 		if(life_is_arrested) then {
