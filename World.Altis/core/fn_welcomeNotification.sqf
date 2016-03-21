@@ -31,6 +31,7 @@ _message = _message + "<a href='http://hostgamesmafia.forumeiros.com/forum' colo
 _message = _message + "Teamspeak 3: mafiaaltisbrasil.meuts3.com.br   <br /><br />";
 _message = _message + "Use a tecla windows para minerar/farmar   <br /><br />";
 _message = _message + "Use a tecla TAB para se render   <br /><br />";
+_message = _message + "O jogador precisa estar nocauteado para sequestrá-lo.  <br /><br />";
 _message = _message + "O servidor está salvando a localização dos jogadores.   <br /><br />";
 _message = _message + "RESPEITE A FAMÍLIA E SERÁ RESPEITADO!   <br /><br />";
 
