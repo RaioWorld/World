@@ -68,6 +68,6 @@
 	if(_goggles in life_illegal_stuffs) then { removeGoggles player;
 	};
 	};
-	hint format["%1 ti ha rimosso tutti gli oggetti illegali.",name _cop];
+	hint format["%1 removeu todos os itens ilegais.",name _cop];
 	[0] call SOCK_fnc_updatePartial;
 	[3] call SOCK_fnc_updatePartial;
