@@ -512,7 +512,7 @@ player createDiarySubject ["controles","Controles"];
 		[
 			"Armamentos ilegais",
 				"
-				Um civil em posse dos seguintes armamentos está sujeito às consequências, tal como as definidas na lei de posse de arma de fogo ilegal.<br/><br/>
+				Um civil usando qualquer item vendido na loja rebelde, mercado negro ou em posse dos seguintes armamentos está sujeito às consequências, tal como as definidas na lei de posse de arma de fogo ilegal.<br/><br/>
 
 				1. MX Series<br/>
 				2. Katiba Series<br/>
