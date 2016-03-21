@@ -196,10 +196,10 @@ class Mission
 	{
 		briefingName="Mafia Altis Life";
 		overviewText="Mafia Altis Life | TS: mafiaaltisbrasil.meuts3.com.br ";
-		startWeather=0;
+		startWeather=0.1;
 		startWind=0;
 		startWindDir=20;
-		forecastWeather=0;
+		forecastWeather=0.1;
 		forecastWind=0;
 		forecastWaves=0;
 		forecastWindDir=360;
@@ -4478,7 +4478,7 @@ class Mission
 				class Item0
 				{
 					position[]={14775.939,5.2391467,10764.805};
-					azimut=714.54114;
+					azimut=714.54102;
 					special="NONE";
 					id=260;
 					side="EAST";
@@ -4486,7 +4486,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="reb_1_1_2";
-					init="removeallWeapons this; this enableSimulation false;this allowDamage false; this addAction[""Loja de veiculos"",life_fnc_vehicleShopMenu,[""reb_car1"",civilian,[""vip_v_2"",""vip_v_2_1"",""vip_v_2_1_1""],""civ"",""Loja de veiculos Vip""],0,false,false,"""",'license_civ_donator']; this addAction[""Loja de Roupas Vip"",life_fnc_clothingMenu,""reb1"",0,false,false,"""",' license_civ_donator && playerSide == civilian'];this addAction[""Loja de Armas"",life_fnc_weaponShopMenu,""doador"",0,false,false,"""",'license_civ_donator && playerSide == civilian']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""donator"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""donator"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""donator"",0,false,false,"""",' !license_civ_donator && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this setVariable[""realname"", ""Loja Vip""]; ";
+					init="removeallWeapons this; this enableSimulation false;this allowDamage false; this addAction[""Loja de veiculos Vip"",life_fnc_vehicleShopMenu,[""reb_car1"",civilian,[""vip_v_2"",""vip_v_2_1"",""vip_v_2_1_1""],""civ"",""Loja de veiculos""],0,false,false,"""",'license_civ_donator']; this addAction[""Loja de Roupas Vip"",life_fnc_clothingMenu,""reb1"",0,false,false,"""",' license_civ_donator && playerSide == civilian'];this addAction[""Loja de Armas Vip"",life_fnc_weaponShopMenu,""doador"",0,false,false,"""",'license_civ_donator && playerSide == civilian']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""donator"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""donator"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""donator"",0,false,false,"""",' !license_civ_donator && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this setVariable[""realname"", ""Loja Vip""]; ";
 				};
 			};
 		};
@@ -5041,21 +5041,21 @@ class Mission
 		};
 		class Item145
 		{
-			side="WEST";
+			side="CIV";
 			class Vehicles
 			{
 				items=1;
 				class Item0
 				{
-					position[]={16743.66,9.5383549,13641.875};
-					azimut=-213.864;
+					position[]={16743.711,9.5326757,13642.069};
+					azimut=147.935;
 					special="NONE";
 					id=288;
-					side="WEST";
-					vehicle="B_RangeMaster_F";
+					side="CIV";
+					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false;this allowDamage false;this addAction[localize""Mercado Negro"",life_fnc_weaponShopMenu,""mercado_negro""];this addAction[localize ""Mercado Negro Roupa"",life_fnc_clothingMenu,""mercado_negroC""];this setVariable[""realname"", ""Mercado Negro""];";
+					init="this enableSimulation false;this allowDamage false;this addAction[""Mercado Negro"",life_fnc_weaponShopMenu,""mercado_negro""];this addAction[""Mercado Negro Roupa"",life_fnc_clothingMenu,""mercado_negroC""];this setVariable[""realname"", ""Mercado Negro""];";
 				};
 			};
 		};
@@ -90752,7 +90752,7 @@ class Mission
 		};
 		class Item126
 		{
-			position[]={16744.75,9.3234253,13645.664};
+			position[]={16745.295,9.3282719,13645.353};
 			name="diamond_trader";
 			text="Mercado Negro";
 			type="mil_objective";
