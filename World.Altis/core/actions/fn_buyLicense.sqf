@@ -8,6 +8,8 @@
 */
 private["_type","_varName","_displayName","_sideFlag","_price"];
 _type = SEL(_this,3);
+if((life_nottoofast != 0) && ((time - life_nottoofast) < 2)) exitWith {hint "Não tão rápido!";};
+life_nottoofast = time;
 
 if(!isClass (missionConfigFile >> "Licenses" >> _type)) exitWith {}; //Bad entry?
 _varName = M_CONFIG(getText,"Licenses",_type,"variable");
