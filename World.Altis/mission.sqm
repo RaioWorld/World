@@ -196,10 +196,10 @@ class Mission
 	{
 		briefingName="Mafia Altis Life";
 		overviewText="Mafia Altis Life | TS: mafiaaltisbrasil.meuts3.com.br ";
-		startWeather=0;
+		startWeather=0.1;
 		startWind=0;
 		startWindDir=20;
-		forecastWeather=0;
+		forecastWeather=0.1;
 		forecastWind=0;
 		forecastWaves=0;
 		forecastWindDir=360;
@@ -92269,16 +92269,16 @@ class Mission
 		};
 		class Item299
 		{
-			position[]={14793.595,5.3531981,10778.956};
+			position[]={14796.895,5.7476707,10771.593};
 			name="safe_area_5";
 			text="safe_area_5";
-			markerType="ELLIPSE";
+			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorGreen";
 			fillName="FDiagonal";
-			a=90;
-			b=90;
-			angle=511.87201;
+			a=85;
+			b=85;
+			angle=630.47498;
 		};
 		class Item300
 		{
@@ -93351,10 +93351,11 @@ class Mission
 		};
 		class Item21
 		{
-			position[]={14793.498,5.310287,10779.536};
-			a=90;
-			b=90;
-			angle=871.14502;
+			position[]={14796.722,5.7349892,10771.661};
+			a=85;
+			b=85;
+			angle=810.30603;
+			rectangular=1;
 			activationBy="CIV";
 			activationType="CIV D";
 			repeating=1;
