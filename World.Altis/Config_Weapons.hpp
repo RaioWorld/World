@@ -459,4 +459,22 @@ class WeaponShops {
         mags[] = {};
         accs[] = {};
     };
+    class mercado_negro {
+        name = "Mercado Negro";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = {
+            { "arifle_Katiba_F", "", 340000, -1 },
+            { "arifle_Katiba_C_F", "", 350000, -1 },
+            { "arifle_MX_Black_F", "", 380000, -1 }
+        };
+        mags[] = {
+            { "30Rnd_65x39_caseless_green", "", 2000 },
+            { "30Rnd_65x39_caseless_green_mag_Tracer", "", 2000 }
+        };
+        accs[] = {
+            { "optic_Arco", "", 4000 }
+        };
+    };
 };
