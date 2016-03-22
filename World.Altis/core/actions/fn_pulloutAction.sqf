@@ -11,7 +11,8 @@ _crew = crew cursorTarget;
 if(side _x == west OR side _x == civilian ) then {
 	{
 	if(_x getVariable "restrained") then {
-	_x setVariable ["transporting",false,true]; _x SVAR ["Escorting",false,true];
+	_x setVariable ["transporting",false,true];
+	_x SVAR ["Escorting",false,true];
 	[_x] remoteExecCall ["life_fnc_pulloutVeh",_x];
    	};
    	};
