@@ -454,6 +454,13 @@ class WeaponShops {
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
+            { "Rangefinder", "", 300, -1 },
+            { "ItemGPS", "", 100, -1 },
+            { "ToolKit", "", 250, -1 },
+            { "FirstAidKit", "", 150, -1 },
+            { "Medikit", "", 1000, -1 },
+            { "NVGoggles", "", 2000, -1 },
+            
             { "arifle_MX_Black_F", "", 380000, -1 }
         };
         mags[] = {
