@@ -17,7 +17,7 @@ if (playerSide == civilian) then {	{
 		} foreach _crew;
 		} else {
 		{
-		if(side _x !== west || (_x getVariable "restrained")) then		{
+		if(side _x != west || (_x getVariable "restrained")) then		{
 		_x setVariable ["transporting",false,true];
 		_x setVariable ["Escorting",false,true];
 		[[_x],"life_fnc_pulloutVeh",_x,false] spawn life_fnc_MP;
