@@ -5055,7 +5055,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false;this allowDamage false;this addAction[""Mercado Negro Arma"",life_fnc_weaponShopMenu,""mercado_negro""];this addAction[""Mercado Negro Roupa"",life_fnc_clothingMenu,""mercado_negroC""];this setVariable[""realname"", ""Mercado Negro""];";
+					init="this enableSimulation false;this allowDamage false;this addAction[""Mercado Negro Arma"",life_fnc_weaponShopMenu,""mercado_negro""];this addAction[""Mercado Negro Roupa"",life_fnc_clothingMenu,""mercado_negroC""]; this addAction[""Equipamentos"",life_fnc_virt_menu,""mercado_negroM""];this setVariable[""realname"", ""Mercado Negro""];";
 				};
 			};
 		};
