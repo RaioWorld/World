@@ -9,7 +9,7 @@
 /private["_crew"];
 _crew = crew cursorTarget;
 	if (playerSide == civilian) then {
-{
+	{
 	if(_x getVariable "restrained") then {
 	_x setVariable ["transporting",false,true];
 	_x setVariable ["Escorting",false,true];
