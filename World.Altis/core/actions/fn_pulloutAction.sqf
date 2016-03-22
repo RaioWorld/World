@@ -8,12 +8,10 @@
 */
 /private["_crew"];
 _crew = crew cursorTarget;
-if(side _x == west OR side _x == civilian ) then {
-	{
-	if(_x getVariable "restrained") then {
+{
+if(Side == west OR side _x == civilian || _x getVariable["restrained",false]) then {
 	_x setVariable ["transporting",false,true];
-	_x SVAR ["Escorting",false,true];
-	[_x] remoteExecCall ["life_fnc_pulloutVeh",_x];
-   	};
-   	};
-  }forEach _crew;
+	_x setVariable ["Escorting",false,true];
+	[[_x],"life_fnc_pulloutVeh",_x,false] spawn life_fnc_MP;
+	};
+	} foreach _crew;
