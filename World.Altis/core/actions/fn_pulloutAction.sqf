@@ -10,10 +10,14 @@ private["_crew"];
 _crew = crew cursorTarget;
 
 {
-	if(side _x == west OR side _x == civilian ) then {
-	if(player getVariable "restrained") then {
+	if(side _x == west ) then {
 		_x setVariable ["transporting",false,true]; _x SVAR ["Escorting",false,true];
 		[_x] remoteExecCall ["life_fnc_pulloutVeh",_x];
 	};
+	
+	if(side _x == civilian ) exitWith {};
+	if(player getVariable "restrained") then {
+		_x setVariable ["transporting",false,true]; _x SVAR ["Escorting",false,true];
+		[_x] remoteExecCall ["life_fnc_pulloutVeh",_x];
 	};
 } forEach _crew;
