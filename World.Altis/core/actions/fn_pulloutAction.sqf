@@ -15,7 +15,7 @@ _crew = crew cursorTarget;
 		[_x] remoteExecCall ["life_fnc_pulloutVeh",_x];
 	};
 	
-	if(side _x == civilian ) && (player getVariable "restrained") then {
+	if(side _x == civilian && (player getVariable "restrained")) then {
 		_x setVariable ["transporting",false,true]; _x SVAR ["Escorting",false,true];
 		[_x] remoteExecCall ["life_fnc_pulloutVeh",_x];
 	};
