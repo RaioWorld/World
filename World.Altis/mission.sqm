@@ -4995,7 +4995,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market""]; this setVariable[""realname"", ""Mercado Vip""];";
+					init="this allowDamage false; this enableSimulation false;this addAction[""Mercado"",life_fnc_virt_menu,""mercado_negroM""]; this setVariable[""realname"", ""Mercado Vip""];";
 				};
 			};
 		};
@@ -92321,7 +92321,7 @@ class Mission
 		};
 		class Item305
 		{
-			position[]={14779.589,4.8018808,10779.094};
+			position[]={14778.504,4.0553284,10788.557};
 			name="vip_v_2";
 			type="Empty";
 			angle=1077.7029;
