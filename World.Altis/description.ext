@@ -1,3 +1,6 @@
+#include "infiSTAR_AdminMenu.hpp"
+
+
 author = "Tonic editada por Digone";
 loadScreen = "textures\placas\welcome.jpg";
 joinUnassigned = 1;
