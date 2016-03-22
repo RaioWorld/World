@@ -15,4 +15,5 @@ _crew = crew cursorTarget;
 		_x setVariable ["transporting",false,true]; _x SVAR ["Escorting",false,true];
 		[_x] remoteExecCall ["life_fnc_pulloutVeh",_x];
 	};
+	};
 } forEach _crew;
