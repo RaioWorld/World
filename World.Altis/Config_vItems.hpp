@@ -13,7 +13,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "storagesmall", "storagebig" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "fuelFull", "peach", "storagesmall", "storagebig" };
     };
 
     class rebel {
@@ -840,5 +840,12 @@ class VirtualItems {
         illegal = false;
         edible = 100;
         icon = "icons\ico_cookedMeat.paa";
+    };
+    class mercado_negroM {
+        name = "Equipamentos";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
     };
 };
