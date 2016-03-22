@@ -116,18 +116,16 @@ class WeaponShops {
             { "10Rnd_93x64_DMR_05_Mag", "", 3000 }
         };
         accs[] = {
-            { "optic_Hamr", "", 2000 },
-            { "optic_Holosight_smg", "", 2000 },
-            { "optic_Arco", "", 8000 },
-            { "optic_ACO_grn_smg", "", 8000 },
-            { "optic_MRCO", "", 8000 },
-            { "optic_SOS", "", 20000 },
-            { "optic_DMS", "", 38000 },
-            { "optic_AMS", "", 95000 },
-            { "bipod_01_F_blk", "", 5000 },
-            { "bipod_01_F_mtp", "", 5000 },
-            { "bipod_01_F_snd", "", 5000 },
-            { "bipod_01_F_tan", "", 5000 }
+            { "optic_ACO_grn_smg", "", 9500 },
+            { "optic_SOS", "", 15000 },
+            { "optic_DMS", "", 18000 },
+            { "optic_Arco", "", 20000 },
+            { "optic_Hamr", "", 21000 },
+            { "optic_AMS", "", 90000 },
+            { "optic_Holosight_smg", "", 15000 },
+            { "bipod_01_F_blk", "", 8000 },
+            { "bipod_01_F_mtp", "", 8000 },
+            { "bipod_01_F_snd", "", 8000 }
         };
     };
     
@@ -209,19 +207,16 @@ class WeaponShops {
             { "10Rnd_93x64_DMR_05_Mag", "", 3000 }
         };
         accs[] = {
-            { "optic_Hamr", "", 1000 },
-            { "optic_Holosight_smg", "", 1000 },
-            { "optic_Arco", "", 4000 },
-            { "optic_ACO_grn_smg", "", 4000 },
-            { "optic_MRCO", "", 4000 },
-            { "optic_SOS", "", 10000 },
-            { "optic_DMS", "", 19000 },
-            { "optic_AMS", "", 95000 },
-            
-            { "bipod_01_F_blk", "", 2500 },
-            { "bipod_01_F_mtp", "", 2500 },
-            { "bipod_01_F_snd", "", 2500 },
-            { "bipod_01_F_tan", "", 2500 }
+             { "optic_ACO_grn_smg", "", 4750 },
+            { "optic_SOS", "", 7500 },
+            { "optic_DMS", "", 9000 },
+            { "optic_Arco", "", 10000 },
+            { "optic_Hamr", "", 10500 },
+            { "optic_AMS", "", 45000 },
+            { "optic_Holosight_smg", "", 7500 },
+            { "bipod_01_F_blk", "", 4000 },
+            { "bipod_01_F_mtp", "", 4000 },
+            { "bipod_01_F_snd", "", 4000 }
         };
     };
             
@@ -323,16 +318,15 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 150 },
         };
         accs[] = {
-            { "optic_Hamr", "", 950 },
             { "optic_ACO_grn_smg", "", 950 },
-            { "optic_MRCO", "", 1200 },
+            { "optic_SOS", "", 1500 },
+            { "optic_DMS", "", 1800 },
             { "optic_Arco", "", 2000 },
-            { "optic_Holosight_smg", "", 500 },
-            
+            { "optic_Hamr", "", 2100 },
+            { "optic_Holosight_smg", "", 1500 },
             { "bipod_01_F_blk", "", 800 },
             { "bipod_01_F_mtp", "", 800 },
-            { "bipod_01_F_snd", "", 800 },
-            { "bipod_01_F_tan", "", 800 }
+            { "bipod_01_F_snd", "", 800 }
         };
     };
 
@@ -372,19 +366,16 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag_Tracer", "", 130 }
         };
         accs[] = {
-            { "optic_Hamr", "", 950 },
             { "optic_ACO_grn_smg", "", 950 },
-            { "optic_MRCO", "", 1200 },
             { "optic_SOS", "", 1500 },
             { "optic_DMS", "", 1800 },
             { "optic_Arco", "", 2000 },
-            { "optic_Holosight_smg", "", 500 },
+            { "optic_Hamr", "", 2100 },
             { "optic_AMS", "", 45000 },
-            
+            { "optic_Holosight_smg", "", 1500 },
             { "bipod_01_F_blk", "", 800 },
             { "bipod_01_F_mtp", "", 800 },
-            { "bipod_01_F_snd", "", 800 },
-            { "bipod_01_F_tan", "", 800 }
+            { "bipod_01_F_snd", "", 800 }
         };
     };
 
@@ -427,18 +418,16 @@ class WeaponShops {
             { "10Rnd_127x54_Mag", "", 100 }
         };
         accs[] = {
-            { "optic_Hamr", "", 950 },
             { "optic_ACO_grn_smg", "", 950 },
             { "optic_SOS", "", 1500 },
             { "optic_DMS", "", 1800 },
             { "optic_Arco", "", 2000 },
-            { "optic_Holosight_smg", "", 500 },
+            { "optic_Hamr", "", 2100 },
             { "optic_AMS", "", 45000 },
-            
+            { "optic_Holosight_smg", "", 1500 },
             { "bipod_01_F_blk", "", 800 },
             { "bipod_01_F_mtp", "", 800 },
-            { "bipod_01_F_snd", "", 800 },
-            { "bipod_01_F_tan", "", 800 }
+            { "bipod_01_F_snd", "", 800 }
         };
     };
 
@@ -465,13 +454,9 @@ class WeaponShops {
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "arifle_Katiba_F", "", 340000, -1 },
-            { "arifle_Katiba_C_F", "", 350000, -1 },
             { "arifle_MX_Black_F", "", 380000, -1 }
         };
         mags[] = {
-            { "30Rnd_65x39_caseless_green", "", 2000 },
-            { "30Rnd_65x39_caseless_green_mag_Tracer", "", 2000 },
             { "30Rnd_65x39_caseless_mag", "", 2000 },
             { "30Rnd_65x39_caseless_mag_Tracer", "", 2000 }
         };
