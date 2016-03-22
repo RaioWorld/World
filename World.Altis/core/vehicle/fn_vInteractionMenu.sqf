@@ -102,7 +102,7 @@ if(playerSide == west) then {
 
 };
 
-if(playerSide == civilian) then {
+if(playerSide == civilian && (player getVariable "restrained")) then {
 
 _Btn4 ctrlSetText localize "STR_vInAct_PullOut";
 
