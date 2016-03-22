@@ -554,7 +554,8 @@ class Clothing {
             { "V_PlateCarrier1_rgr", "Carrier Lite (Green)", 5000, { "", "", -1 } }
         };
         backpacks[] = {
-            { "NONE", "Remove Backpack", 0, { "", "", -1 } }
+            { "NONE", "Remove Backpack", 0, { "", "", -1 } },
+            { "B_Carryall_ocamo", "", 7500, { "", "", -1 } }
         };
     };
 };
