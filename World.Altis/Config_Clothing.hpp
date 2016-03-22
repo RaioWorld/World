@@ -274,7 +274,7 @@ class Clothing {
             { "U_IG_Guerrilla_6_1", "", 40000, {"Guerilla Apparel", "", -1} },
             { "U_O_SpecopsUniform_ocamo", "", 45000, { "Recon Fatigues (Hex)", "", -1 } },
             { "U_O_PilotCoveralls", "", 55000, { "Pilot Coveralls [AAF]", "", -1 } },
-            { "U_O_GhillieSuit", "", 70000, { "Ghillie Suit [AAF]", "", -1 } }
+            { "U_O_GhillieSuit", "", 70000, { "Ghillie Suit [AAF]", "", -1 } },
             { "U_O_FullGhillie_sard", "", 95000, {"Full Ghillie (Semi-Arid) (NATO)", "", -1} },
             { "U_B_FullGhillie_ard", "", 95000, {"Full Ghillie (Arid) (NATO)", "", -1} },
             { "U_B_FullGhillie_lsh", "", 95000, {"Full Ghillie (Lush) (NATO)", "", -1} }
