@@ -23,6 +23,14 @@ class VirtualShops {
         level[] = { "", "", -1, "" };
         items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
     };
+    
+    class mercado_negroM {
+        name = "Equipamentos";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+    };
 
     class gang {
         name = "STR_Shops_Gang";
@@ -840,12 +848,5 @@ class VirtualItems {
         illegal = false;
         edible = 100;
         icon = "icons\ico_cookedMeat.paa";
-    };
-    class mercado_negroM {
-        name = "Equipamentos";
-        side = "civ";
-        license = "";
-        level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
     };
 };
