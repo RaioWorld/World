@@ -11,3 +11,4 @@ if(side _x == west OR side _x == civilian ) then {
 	_x SVAR ["Escorting",false,true];
 	[_x] remoteExecCall ["life_fnc_pulloutVeh",_x];
 };
+}forEach _crew;
