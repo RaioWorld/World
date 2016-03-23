@@ -63,8 +63,7 @@ class CarShops {
         side = "civ";
         vehicles[] = {
             { "C_Rubberboat", { "", "", -1 } },
-            { "C_Boat_Civil_01_F", { "", "", -1 } },
-            { "B_SDV_01_F", { "", "", -1 } }
+            { "C_Boat_Civil_01_F", { "", "", -1 } }
         };
     };
 
@@ -148,8 +147,7 @@ class reb_car1 {
         side = "cop";
         vehicles[] = {
             { "B_Boat_Transport_01_F", { "", "", -1 } },
-            { "C_Boat_Civil_01_police_F", { "", "", -1 } },
-            { "B_SDV_01_F", { "", "", -1 } }
+            { "C_Boat_Civil_01_police_F", { "", "", -1 } }
         };
     };
 };
