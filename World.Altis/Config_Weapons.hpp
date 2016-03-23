@@ -40,7 +40,7 @@ class WeaponShops {
             { "10Rnd_762x54_Mag", "", 130 }
         };
         accs[] = {
-            { "optic_ACO_grn_smg", "", 2500 }
+            { "optic_ACO_grn_smg", "", 2500 },
         };
     };
 
@@ -126,7 +126,7 @@ class WeaponShops {
             { "optic_SOS", "", 15000 },
             { "optic_DMS", "", 18000 },
             { "optic_Arco", "", 20000 },
-            { "optic_Hamr", "", 21000 },
+            { "optic_Hamr", "", 12000 },
             { "optic_AMS", "", 90000 },
             { "optic_Holosight_smg", "", 15000 },
             { "bipod_01_F_blk", "", 8000 },
