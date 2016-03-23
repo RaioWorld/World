@@ -14,7 +14,7 @@
 #define Title 37401
 
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6"];
-if(!dialog) then {
+if(!dialog) && (player distance cursorTarget) < 1) then {
 	createDialog "pInteraction_Menu";
 	};
 	disableSerialization;
