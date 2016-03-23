@@ -504,7 +504,7 @@ player createDiarySubject ["controles","Controles"];
 				1. Ifrit<br/>
 				2. Lancha<br/>
 				3. Hunter<br/>
-				4. Veículos (polícia/socorrista)<br/>
+				4. Veículos (polícia/socorrista/rebeldes)<br/>
 				"
 		]
 	];
@@ -534,7 +534,7 @@ player createDiarySubject ["controles","Controles"];
 				2. Cocaína<br/>
 				3. Heroína<br/>
 				4. Maconha<br/>
-				5. Diamante não processado (depois da fronteira)<br/><br/>
+				5. Diamante<br/><br/>
 				"
 		]
 	];
