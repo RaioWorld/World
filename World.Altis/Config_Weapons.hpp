@@ -57,6 +57,11 @@ class WeaponShops {
             { "FirstAidKit", "", 150, -1 },
             { "Medikit", "", 1000, -1 },
             { "NVGoggles", "", 2000, -1 },
+            { "optic_AMS", "", 90000 },
+            { "optic_Hamr", "", 10500 },
+            { "bipod_01_F_blk", "", 4000 },
+            { "bipod_01_F_mtp", "", 4000 },
+            { "bipod_01_F_snd", "", 4000 },
             
             { "hgun_Rook40_F", "", 30000, -1 },
             { "hgun_Pistol_heavy_02_F", "", 40000, -1 },
@@ -126,12 +131,7 @@ class WeaponShops {
             { "optic_SOS", "", 15000 },
             { "optic_DMS", "", 18000 },
             { "optic_Arco", "", 20000 },
-            { "optic_Hamr", "", 12000 },
-            { "optic_AMS", "", 90000 },
-            { "optic_Holosight_smg", "", 15000 },
-            { "bipod_01_F_blk", "", 8000 },
-            { "bipod_01_F_mtp", "", 8000 },
-            { "bipod_01_F_snd", "", 8000 }
+            { "optic_Holosight_smg", "", 15000 }
         };
     };
     
