@@ -244,7 +244,7 @@ class WeaponShops {
             { "16Rnd_9x21_Mag", "", 25 },
             { "6Rnd_45ACP_Cylinder", "", 50 },
             { "9Rnd_45ACP_Mag", "", 45 },
-            { "30Rnd_9x21_Mag", "", 75 }
+            { "30Rnd_9x21_Mag", "", 75 },
             { "30Rnd_45ACP_Mag_SMG_01", "", 100 },
             { "30Rnd_45ACP_Mag_SMG_01_tracer_green", "", 100 },
             { "30Rnd_9x21_Mag", "", 110 },
