@@ -87,7 +87,7 @@ class reb_car1 {
          side = "civ";
          vehicles[] = {
             { "B_Quadbike_01_F", { "", "", -1 } },
-            { "B_G_Offroad_01_F", 5000000, { "", "", -1 } },
+            { "B_G_Offroad_01_F", { "", "", -1 } },
             { "B_G_Offroad_01_armed_F", { "", "", -1 } },
              
             { "C_Van_01_box_F", { "", "", -1 } },
